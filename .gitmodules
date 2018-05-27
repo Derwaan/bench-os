@@ -1,0 +1,6 @@
+[submodule "os/contiki"]
+	path = os/contiki
+	url = https://github.com/contiki-os/contiki
+[submodule "os/riot"]
+	path = os/riot
+	url = https://github.com/RIOT-OS/RIOT
