@@ -3,7 +3,7 @@ Master thesis, Gomez Julien & Tran Trong-Vu, 2018.
 
 Promoter: [Prof. Ramin Sadre](https://uclouvain.be/fr/repertoires/ramin.sadre)
 
-Ecole polytechnique de Louvain at Université Catholique de Louvain, Belgium.
+École polytechnique de Louvain at Université catholique de Louvain, Belgium.
 
 ## Abstract
 
