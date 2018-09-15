@@ -1,0 +1,120 @@
+\documentclass[journal, a4paper]{../IEEEtran}
+
+% Packages
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{amsmath}
+
+
+
+\begin{document}
+
+% Title - Author - Date
+\title{RIOT Summit 2018 -- Report}
+\author{Julien Gomez \and Trong-Vu Tran}
+\date{September 13-14 2018}
+\markboth{Université catholique de Louvain}{}
+\maketitle
+
+% ABSTRACT
+\begin{abstract}
+	During the RIOT Summit 2018, we talk to some developers that were
+	interested in our thesis. A good approach for our work would be to
+	contact the IoT community and ask them in what they are interested in
+    the benchmarking of real-time OS. During the first day, we discore other 
+    RTOS that could be benchmarked: \textit{Apache Mynewt}, \textit{Zephyr}, 
+    \textit{MbedOS}, \textit{Contiki-NG}. During the second day, we discover 
+    service like \textit{The Things Network} and \textit{IoT Lab}.
+\end{abstract}
+
+%% INTRODUCTION
+\section{Introduction}
+\IEEEPARstart{F}{or} our master thesis "Benchmarking of Real-Time Operating 
+Systems on Internet of Things", we went to the RIOT Summit 2018 at Amsterdam.
+    
+This was the third summit of the RIOT community. Every year the members of
+thi community regroup and talk about their projects and the future work for
+RIOT-OS\footnote{\url{http://riot-os.org}}.
+
+The summit was divided into two days. During the first day, 12 speakers
+presented their work. On the second day, tutorials were given and breakout
+groups ended the summit. More information can be found on the summit 
+website\footnote{\url{http://summit.riot-os.org/2018/}}.
+
+This report will present what we learn during these two days and what will
+be useful for our master thesis.
+
+\section{First day}
+During the first day, 12 talks were given by IoT developers and enthusiasts.
+For each of the keynote, we describe what we learn and what will be useful for
+our thesis.
+
+Notice that we do not mention all keynotes as some of them are irrelevant for
+our master thesis.
+
+\subsection{From R\&D to production -- Jaime Jiménez}
+The speaker shows us that the IoT world is shared among four major "players":
+\begin{itemize}
+    \item System integrators,
+    \item Cloud providers,
+    \item Telecom infrastructures and
+    \item Operators.
+\end{itemize}
+
+% Room left for startups
+% Lot of standars: Connectivity, applications and security
+% Open-source is difficult with patents
+
+\subsection{NimBLE - Portable bluetooth stack from Apache Mynewt -- Szymon Janc}
+From this keynote, we discore a new RTOS: \textit{Apache Mynewt}.
+
+% NimBLE can be interesting to benchmark
+% Bluetooth has goes trough a lot of improvements
+% BLE = Bluetooth Low Energy - build from scratch
+
+\subsection{Google Protocol Buffers form embedded IoT -- Morgan Kita}
+
+% JSON is too hard for IoT (parsing)
+% Pro and Con of GPB
+% GPB implemented by Nano-PB
+% RTOS using JSON or XML can be improved
+
+\subsection{Resource discovery, Object Security and other news from CoAP -- 
+Christian Amsüss}
+
+% RD = search engine in IoT
+% Proxy used to retransit packets
+% OSCORE = security in CoAP
+% OSCORE use POST req. with encrypted payload
+% CoAP too high level for us
+
+\subsection{Build a robot with RIOT -- Gilles Doffe}
+ 
+% Scheduler of RIOT is tickless (no clock to check for priority)
+% Issues with real app: constraint memory, scheduling, clock period, tasks
+%   taking too much time
+% Need to take into account the type of the OS scheduler
+
+\subsection{New Crypto-fundamentals in RIOT -- Pieter Kietzmann}
+
+% Entropy in RIOT not easy
+% Physical Unclonable Function to generate seed or key
+% Entropy can be a criteria
+
+\section{Second day}
+
+% Tutorials on IoT Lab + The Things Network
+% Philip repo
+% Hardware in the Loop testing
+
+\section{Additional information}
+
+% STM32F4 - ST series, Cortex M4
+% Confirmation for the logical analyser approach
+
+
+%% CONCLUSION
+\section{Conclusion}
+\end{document}
