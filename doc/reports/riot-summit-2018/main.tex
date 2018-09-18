@@ -67,8 +67,15 @@ This help startups to immerge from a highly competitive world among big players 
 Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/0_3-Jaime-Jimenez-Keynote.pdf}{here}.
 
 \subsection{NimBLE - Portable bluetooth stack from Apache Mynewt -- Szymon Janc}
-From this keynote, we discore a new RTOS: \textit{Apache Mynewt}.
 
+The talk explains the implementation of the Bluetooth Low Energy (BLE) technology into Apache Mynewt, another RTOS.
+It is integrated as a module called NimBLE.
+A brief presentation of the Bluetooth technology and its evolutions was given.
+Then the presenter talked about the Apache Mynewt project.
+The last part was about refactoring the NimBLE module to port it into other OS's.\\
+
+In conclusion, this talk was interesting as we could see how the stack was implemented and ported.
+It could be a good starting point if we decide to benchmark BLE.
 % NimBLE can be interesting to benchmark
 % Bluetooth has goes trough a lot of improvements
 % BLE = Bluetooth Low Energy - build from scratch
@@ -92,7 +99,14 @@ Clients can then request a particular resource with a single request to the RD (
 He then explained in more details the aspects and advantages of this topology.\\
 
 The second part of the talk was about OSCORE (Object Security for CoRE).
-
+The principle is to hide a CoAP request or response into a generic encrypted CoAP request or response.
+For example, a GET request for a resource is hidden into a POST request which hides the resource that the client wish to access.
+The POST request contains 2 special fields:
+\begin{itemize}
+    \item Object-Security which is used to share a key and a nonce (depending on the encryption scheme used),
+    \item Encrypted payload which is the actual request encrypted.
+\end{itemize}
+The same mechanism applies with the response.\\
 
 % RD = search engine in IoT
 % Proxy used to retransit packets
