@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{url}
+\usepackage{hyperref}
 \usepackage{amsmath}
 
 
@@ -20,41 +20,36 @@
 
 % ABSTRACT
 \begin{abstract}
-	During the RIOT Summit 2018, we talk to some developers that were
-	interested in our thesis. A good approach for our work would be to
-	contact the IoT community and ask them in what they are interested in
-    the benchmarking of real-time OS. During the first day, we discore other 
-    RTOS that could be benchmarked: \textit{Apache Mynewt}, \textit{Zephyr}, 
-    \textit{MbedOS}, \textit{Contiki-NG}. During the second day, we discover 
-    service like \textit{The Things Network} and \textit{IoT Lab}.
+	During the RIOT Summit 2018, we talked to some developers that were interested in our thesis. 
+    A good approach for our work would be to contact the IoT community and ask them in what they are interested in the benchmarking of real-time OS. 
+    During the first day, we discover other RTOS that could be benchmarked: \textit{Apache Mynewt}, \textit{Zephyr}, \textit{MbedOS}, \textit{Contiki-NG}. 
+    During the second day, we discover service like \textit{The Things Network} and \textit{IoT Lab}.
 \end{abstract}
 
 %% INTRODUCTION
 \section{Introduction}
-\IEEEPARstart{F}{or} our master thesis "Benchmarking of Real-Time Operating 
-Systems on Internet of Things", we went to the RIOT Summit 2018 at Amsterdam.
+\IEEEPARstart{F}{or} our master thesis "Benchmarking of Real-Time Operating Systems on Internet of Things", we went to the RIOT Summit 2018 at Amsterdam.
     
-This was the third summit of the RIOT community. Every year the members of
-thi community regroup and talk about their projects and the future work for
-RIOT-OS\footnote{\url{http://riot-os.org}}.
+This was the third summit of the RIOT community. 
+Every year the members of this community regroup and talk about their projects and the future work for RIOT-OS\footnote{\url{http://riot-os.org}}. \\
 
-The summit was divided into two days. During the first day, 12 speakers
-presented their work. On the second day, tutorials were given and breakout
-groups ended the summit. More information can be found on the summit 
-website\footnote{\url{http://summit.riot-os.org/2018/}}.
+The summit was divided into two days. 
+During the first day, 12 speakers presented their work. On the second day, tutorials were given and breakout groups ended the summit. 
+More information can be found on the summit \href{http://summit.riot-os.org/2018/}{website}. \\
 
-This report will present what we learn during these two days and what will
-be useful for our master thesis.
+This report will present what we learned during these two days and what will be useful for our master thesis.
 
 \section{First day}
 During the first day, 12 talks were given by IoT developers and enthusiasts.
-For each of the keynote, we describe what we learn and what will be useful for
-our thesis.
+For each of the keynotes, we describe what we learned and what will be useful for our thesis.
 
-Notice that we do not mention all keynotes as some of them are irrelevant for
-our master thesis.
+Notice that we do not mention all keynotes as some of them are irrelevant for our master thesis.
 
 \subsection{From R\&D to production -- Jaime Jiménez}
+In the IoT world, many standards exist. In the connectiviy layer, we can found \textsc{6LoWPAN}, \textsc{LoRaWAN}, \textsc{ROLL}, \dots \\
+In the applications layer, \textsc{CoAP}, \textsc{CBOR}, \dots \\ 
+In the security layer, \textsc{COSE}, \textsc{DICE}, \dots \\
+
 The speaker shows us that the IoT world is shared among four major "players":
 \begin{itemize}
     \item System integrators,
@@ -63,9 +58,13 @@ The speaker shows us that the IoT world is shared among four major "players":
     \item Operators.
 \end{itemize}
 
-% Room left for startups
-% Lot of standars: Connectivity, applications and security
-% Open-source is difficult with patents
+Between these major players, there is still room for innovative startups. Jaime Jiménez show us some example like \textit{Smart Rockbolt} or \textit{IOTEROP}. \\
+
+In conclusion, we learn that the IoT world is complex with a lot a standards. 
+Many of these standards are open-source.
+This help startups to immerge from a highly competitive world among big players like Google, IBM or AT\&T. \\
+
+Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/0_3-Jaime-Jimenez-Keynote.pdf}{here}.
 
 \subsection{NimBLE - Portable bluetooth stack from Apache Mynewt -- Szymon Janc}
 From this keynote, we discore a new RTOS: \textit{Apache Mynewt}.
@@ -74,15 +73,26 @@ From this keynote, we discore a new RTOS: \textit{Apache Mynewt}.
 % Bluetooth has goes trough a lot of improvements
 % BLE = Bluetooth Low Energy - build from scratch
 
-\subsection{Google Protocol Buffers form embedded IoT -- Morgan Kita}
+Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/1_1-Szymon-Janc-NimBLE.pdf}{here}.
+
+\subsection{Google Protocol Buffers for embedded IoT -- Morgan Kita}
 
 % JSON is too hard for IoT (parsing)
 % Pro and Con of GPB
 % GPB implemented by Nano-PB
 % RTOS using JSON or XML can be improved
 
-\subsection{Resource discovery, Object Security and other news from CoAP -- 
-Christian Amsüss}
+Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/1_2-Kita-Morgan-Protobuf.pdf}{here}.
+
+\subsection{Resource discovery, Object Security and other news from CoAP -- Christian Amsüss}
+This talk gives an introduction to the CoAP protocol and its recent and ongoing developments mainly in term of security and network topology.\\
+
+The first part of the talk was about the CoRE Resource Directory, a centralized directory where servers (i.e. devices) can register their resources.
+Clients can then request a particular resource with a single request to the RD (i.e. Resource Directory).
+He then explained in more details the aspects and advantages of this topology.\\
+
+The second part of the talk was about OSCORE (Object Security for CoRE).
+
 
 % RD = search engine in IoT
 % Proxy used to retransit packets
@@ -90,18 +100,44 @@ Christian Amsüss}
 % OSCORE use POST req. with encrypted payload
 % CoAP too high level for us
 
+Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/1_3-Christian-Asmuess-CoAP-RD.pdf}{here}.
+
 \subsection{Build a robot with RIOT -- Gilles Doffe}
+For the Robotic Cup 2018, \textit{Savoir-faire Linux} built a robot using RIOT-OS.
+The main part we will focus on for this keynote is the architecture and the scheduling they use for their robot.
+They implemented three threads: one for the motion control, one for the planner and one for the analog sensors.
  
+The \textit{Savoir-faire linux} team struggled with the scheduler of RIOT-OS. 
+The RTOS provides a tickless, preemptive and priority based scheduler.
+
+After speaking with Gilles Doffe, we understand more how the scheduler of RIOT-OS works.
+For our thesis, we will take into account the type of scheduler used by the benchmarked RTOS.
+
+
 % Scheduler of RIOT is tickless (no clock to check for priority)
 % Issues with real app: constraint memory, scheduling, clock period, tasks
 %   taking too much time
 % Need to take into account the type of the OS scheduler
 
+Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/2_1-Gille-Doffe-RIOT-Robot.pdf}{here}.
+
 \subsection{New Crypto-fundamentals in RIOT -- Pieter Kietzmann}
 
-% Entropy in RIOT not easy
-% Physical Unclonable Function to generate seed or key
-% Entropy can be a criteria
+The speaker talked about the lack of secured hardware in Commercial Off-the-Shelf IoT devices such as Intel SGX or ARM TrustZone.
+Those devices require efficient security softwares implementations that can be contained within their constraints.\\
+
+He presented what is called Physical Unclonable Functions or PUF, 
+    functions that are based of physical characteristics of a particular device (such as components delays, magnetism or some patterns in the uninitialized memory).
+
+With those kind of functions, a single device own an unique fingerprint which is different from another device (even from the same batch) due to variations in the manufacturing process. \\
+
+He then explained the problematic of noise in the process of generating and authenticating a device using PUFs.
+After that, he presented his implementation of a SRAM based PUF using RIOT for generating PRNG seeds and keys. \\
+
+What we can retain from this presentation is that implementing entropy using a constrained device (for key or seed generation for example) is not easy. \\
+Benchmarking and analyzing the current implementations PRNG's in RTOS's could be very interesting (distribution, bias, uniqueness). \\
+
+Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/3_2-Peter-Kietzmann-Crypto-Fundamentals.pdf}{here}.
 
 \section{Second day}
 
