@@ -20,18 +20,20 @@
 
 % ABSTRACT
 \begin{abstract}
-	During the RIOT Summit 2018, we talked to some developers that were interested in our thesis. 
-    A good approach for our work would be to contact the IoT community and ask them in what they are interested in the benchmarking of real-time OS. 
-    During the first day, we discover other RTOS that could be benchmarked: \textit{Apache Mynewt}, \textit{Zephyr}, \textit{MbedOS}, \textit{Contiki-NG}. 
-    During the second day, we discover service like \textit{The Things Network} and \textit{IoT Lab}.
+    In September took place the RIOT Summit 2018.
+	For this occasion, we attented to numerous keynotes and talked to some developers who were interested in our thesis. 
+    On the first day, we discovered other RTOS that could be benchmarked: \textit{Apache Mynewt}, \textit{Zephyr}, \textit{MbedOS}, \textit{Contiki-NG}. 
+    On the second day, we discovered service like \textit{The Things Network} and \textit{IoT-Lab}.
+    During the conversations with the developers, many give us some advices for our thesis. 
+    Our next step is to contact the IoT community to gather more advices and information on the benchmarking of real-time OS.
 \end{abstract}
 
 %% INTRODUCTION
 \section{Introduction}
-\IEEEPARstart{F}{or} our master thesis "Benchmarking of Real-Time Operating Systems on Internet of Things", we went to the RIOT Summit 2018 at Amsterdam.
+\IEEEPARstart{F}{or} our master thesis "Benchmarking of Real-Time Operating Systems for Internet of Things", we went to the RIOT Summit 2018 in Amsterdam.
     
 This was the third summit of the RIOT community. 
-Every year the members of this community regroup and talk about their projects and the future work for RIOT-OS\footnote{\url{http://riot-os.org}}. \\
+Every year the members of this community regroup and talk about their projects and the future work for \href{http://riot-os.org}{RIOT-OS}. \\
 
 The summit was divided into two days. 
 During the first day, 12 speakers presented their work. On the second day, tutorials were given and breakout groups ended the summit. 
@@ -75,7 +77,8 @@ Then the presenter talked about the Apache Mynewt project.
 The last part was about refactoring the NimBLE module to port it into other OS's.\\
 
 In conclusion, this talk was interesting as we could see how the stack was implemented and ported.
-It could be a good starting point if we decide to benchmark BLE.
+It could be a good starting point if we decide to benchmark BLE. \\
+
 % NimBLE can be interesting to benchmark
 % Bluetooth has goes trough a lot of improvements
 % BLE = Bluetooth Low Energy - build from scratch
@@ -84,10 +87,14 @@ Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sit
 
 \subsection{Google Protocol Buffers for embedded IoT -- Morgan Kita}
 
-% JSON is too hard for IoT (parsing)
-% Pro and Con of GPB
-% GPB implemented by Nano-PB
-% RTOS using JSON or XML can be improved
+JSON or XML format are highly portable and human-readable but cost a lot in IoT ecosystem. 
+Storing, parsing or sending JSON/XML files is too complex for small embedded devices. 
+Other solutions that use binary format exists but they loose the portability and the human-readability value.
+
+Morgan Kita shows us the pro and con of a system using the Google Protocol Buffers.
+In the IoT world, \textit{Nano-PB} implement this protocol.
+
+What we learn from this talk is that JSON, XML or other high-level format can be costly for RTOS. \\
 
 Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/1_2-Kita-Morgan-Protobuf.pdf}{here}.
 
@@ -122,10 +129,10 @@ The main part we will focus on for this keynote is the architecture and the sche
 They implemented three threads: one for the motion control, one for the planner and one for the analog sensors.
  
 The \textit{Savoir-faire linux} team struggled with the scheduler of RIOT-OS. 
-The RTOS provides a tickless, preemptive and priority based scheduler.
+The RTOS provides a tickless, preemptive and priority based scheduler. \\
 
 After speaking with Gilles Doffe, we understand more how the scheduler of RIOT-OS works.
-For our thesis, we will take into account the type of scheduler used by the benchmarked RTOS.
+For our thesis, we will take into account the type of scheduler used by the benchmarked RTOS. \\
 
 
 % Scheduler of RIOT is tickless (no clock to check for priority)
@@ -154,12 +161,26 @@ Benchmarking and analyzing the current implementations PRNG's in RTOS's could be
 Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/3_2-Peter-Kietzmann-Crypto-Fundamentals.pdf}{here}.
 
 \section{Second day}
+The second day was shorter than the first one.
+Two tutorials were give at the same time: one for beginner and one for the maintainers.
+We went to the beginner one.
+This tutorial come from a RIOT course available on \href{https://github.com/aabadie/riot-course}{Github}.
+
+With this short beginner introduction to RIOT, we discover service like \textit{\href{https://www.thethingsnetwork.org/}{The Things Network}} and \textit{\href{https://www.iot-lab.info/}{IoT-Lab}}. 
+The sooner is an interface that allow us to access the \texttt{LoraWAN} network. 
+The later is a large infrastructure that gives access to hundreds of nodes for testing purposes.
 
 % Tutorials on IoT Lab + The Things Network
 % Philip repo
 % Hardware in the Loop testing
 
 \section{Additional information}
+By talking with the developers that were present at the summit, we learned that the STM32F4 series microcontroller is a good choice. 
+With its ARM Cortex-M4 based MCU, it compiles a large variety of RTOS. \\
+
+Additionaly, we talked about our idea to use a logical analyser. 
+Gilles Doffe from \textit{Savoir-faire Linux} confirmed our opinion about using this kind of devices for our benchmarking.
+
 
 % STM32F4 - ST series, Cortex M4
 % Confirmation for the logical analyser approach
@@ -167,4 +188,9 @@ Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sit
 
 %% CONCLUSION
 \section{Conclusion}
+During this summit, we discovered large number of applications of RIOT-OS.
+We talked to some of the maintainers of RIOT-OS and other developers. 
+With their expertise and their advices, we get references to hardwares and softwares that could be useful for our master thesis. \\
+
+What we will do next is to contact those of who that give us their contact information and ask them for recommendations. We will also get in touch with the IoT community via mailing list. 
 \end{document}
