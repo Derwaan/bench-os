@@ -21,10 +21,10 @@
 % ABSTRACT
 \begin{abstract}
     In September took place the RIOT Summit 2018.
-	For this occasion, we attented to numerous keynotes and talked to some developers who were interested in our thesis. 
+	For this occasion, we attented numerous keynotes and talked to some developers who were interested in our thesis. 
     On the first day, we discovered other RTOS that could be benchmarked: \textit{Apache Mynewt}, \textit{Zephyr}, \textit{MbedOS}, \textit{Contiki-NG}. 
     On the second day, we discovered service like \textit{The Things Network} and \textit{IoT-Lab}.
-    During the conversations with the developers, many give us some advices for our thesis. 
+    During the conversations with the developers, many gave us some advices for our thesis. 
     Our next step is to contact the IoT community to gather more advices and information on the benchmarking of real-time OS.
 \end{abstract}
 
@@ -33,7 +33,7 @@
 \IEEEPARstart{F}{or} our master thesis "Benchmarking of Real-Time Operating Systems for Internet of Things", we went to the RIOT Summit 2018 in Amsterdam.
     
 This was the third summit of the RIOT community. 
-Every year the members of this community regroup and talk about their projects and the future work for \href{http://riot-os.org}{RIOT-OS}. \\
+Every year the members of this community gather and talk about their projects and the future work for \href{http://riot-os.org}{RIOT-OS}. \\
 
 The summit was divided into two days. 
 During the first day, 12 speakers presented their work. On the second day, tutorials were given and breakout groups ended the summit. 
@@ -48,11 +48,11 @@ For each of the keynotes, we describe what we learned and what will be useful fo
 Notice that we do not mention all keynotes as some of them are irrelevant for our master thesis.
 
 \subsection{From R\&D to production -- Jaime Jiménez}
-In the IoT world, many standards exist. In the connectiviy layer, we can found \textsc{6LoWPAN}, \textsc{LoRaWAN}, \textsc{ROLL}, \dots \\
+In the IoT world, many standards exist. In the connectiviy layer, we can find \textsc{6LoWPAN}, \textsc{LoRaWAN}, \textsc{ROLL}, \dots \\
 In the applications layer, \textsc{CoAP}, \textsc{CBOR}, \dots \\ 
 In the security layer, \textsc{COSE}, \textsc{DICE}, \dots \\
 
-The speaker shows us that the IoT world is shared among four major "players":
+The speaker showed us that the IoT world is shared among four major "players":
 \begin{itemize}
     \item System integrators,
     \item Cloud providers,
@@ -60,17 +60,17 @@ The speaker shows us that the IoT world is shared among four major "players":
     \item Operators.
 \end{itemize}
 
-Between these major players, there is still room for innovative startups. Jaime Jiménez show us some example like \textit{Smart Rockbolt} or \textit{IOTEROP}. \\
+Between these major players, there is still room for innovative startups. Jaime Jiménez showed us some examples like \textit{Smart Rockbolt} or \textit{IOTEROP}. \\
 
-In conclusion, we learn that the IoT world is complex with a lot a standards. 
+In conclusion, we learned that the IoT world is complex with a lot of standards. 
 Many of these standards are open-source.
-This help startups to immerge from a highly competitive world among big players like Google, IBM or AT\&T. \\
+This helps startups to immerge from a highly competitive world among big players like Google, IBM or AT\&T. \\
 
 Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/0_3-Jaime-Jimenez-Keynote.pdf}{here}.
 
 \subsection{NimBLE - Portable bluetooth stack from Apache Mynewt -- Szymon Janc}
 
-The talk explains the implementation of the Bluetooth Low Energy (BLE) technology into Apache Mynewt, another RTOS.
+The talk explained the implementation of the Bluetooth Low Energy (BLE) technology into Apache Mynewt, another RTOS.
 It is integrated as a module called NimBLE.
 A brief presentation of the Bluetooth technology and its evolutions was given.
 Then the presenter talked about the Apache Mynewt project.
@@ -87,19 +87,19 @@ Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sit
 
 \subsection{Google Protocol Buffers for embedded IoT -- Morgan Kita}
 
-JSON or XML format are highly portable and human-readable but cost a lot in IoT ecosystem. 
+JSON or XML formats are highly portable and human-readable but cost a lot in IoT ecosystem. 
 Storing, parsing or sending JSON/XML files is too complex for small embedded devices. 
-Other solutions that use binary format exists but they loose the portability and the human-readability value.
+Other solutions that use binary format exist but they loose the portability and the human-readability value.
 
-Morgan Kita shows us the pro and con of a system using the Google Protocol Buffers.
-In the IoT world, \textit{Nano-PB} implement this protocol.
+Morgan Kita showed us the pros and cons of a system using the Google Protocol Buffers.
+In the IoT world, \textit{Nano-PB} implements this protocol.
 
-What we learn from this talk is that JSON, XML or other high-level format can be costly for RTOS. \\
+What we've learned from this talk is that JSON, XML or other high-level formast can be costly for RTOS. \\
 
 Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sites/10/2018/09/1_2-Kita-Morgan-Protobuf.pdf}{here}.
 
 \subsection{Resource discovery, Object Security and other news from CoAP -- Christian Amsüss}
-This talk gives an introduction to the CoAP protocol and its recent and ongoing developments mainly in term of security and network topology.\\
+This talk gave an introduction to the CoAP protocol and its recent and ongoing developments mainly in term of security and network topology.\\
 
 The first part of the talk was about the CoRE Resource Directory, a centralized directory where servers (i.e. devices) can register their resources.
 Clients can then request a particular resource with a single request to the RD (i.e. Resource Directory).
@@ -162,12 +162,12 @@ Slides are available \href{http://summit.riot-os.org/2018/wp-content/uploads/sit
 
 \section{Second day}
 The second day was shorter than the first one.
-Two tutorials were give at the same time: one for beginner and one for the maintainers.
+Two tutorials were given at the same time: one for beginners and one for the maintainers.
 We went to the beginner one.
-This tutorial come from a RIOT course available on \href{https://github.com/aabadie/riot-course}{Github}.
+This tutorial comes from a RIOT course available on \href{https://github.com/aabadie/riot-course}{Github}.
 
-With this short beginner introduction to RIOT, we discover service like \textit{\href{https://www.thethingsnetwork.org/}{The Things Network}} and \textit{\href{https://www.iot-lab.info/}{IoT-Lab}}. 
-The sooner is an interface that allow us to access the \texttt{LoraWAN} network. 
+With this short beginner introduction to RIOT, we discovered service like \textit{\href{https://www.thethingsnetwork.org/}{The Things Network}} and \textit{\href{https://www.iot-lab.info/}{IoT-Lab}}. 
+The sooner is an interface that allows us to access the \texttt{LoraWAN} network. 
 The later is a large infrastructure that gives access to hundreds of nodes for testing purposes.
 
 % Tutorials on IoT Lab + The Things Network
@@ -188,9 +188,9 @@ Gilles Doffe from \textit{Savoir-faire Linux} confirmed our opinion about using 
 
 %% CONCLUSION
 \section{Conclusion}
-During this summit, we discovered large number of applications of RIOT-OS.
+During this summit, we discovered a large number of applications of RIOT-OS.
 We talked to some of the maintainers of RIOT-OS and other developers. 
 With their expertise and their advices, we get references to hardwares and softwares that could be useful for our master thesis. \\
 
-What we will do next is to contact those of who that give us their contact information and ask them for recommendations. We will also get in touch with the IoT community via mailing list. 
+What we will do next is to contact those who gave us their contact information and ask them for recommendations. We will also get in touch with the IoT community via mailing list. 
 \end{document}
