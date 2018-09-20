@@ -35,6 +35,7 @@ TODO: Find contact information
 
 ## Apache Mynewt
 
+- [Slack](mynewt.slack.com)
 - [Dev mailing list](dev@mynewt.apache.org)
 
 [Join the mailing list](mailto:dev-subscribe@mynewt.apache.org)
