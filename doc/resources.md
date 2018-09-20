@@ -4,8 +4,7 @@
 
 ### Benchmarking
 
-- [https://www.researchgate.net/publication/279842112_Test_Methodology_for_Real-Time_Operating_System](https://www.researchgate.net/publication/279842112_Test_Methodology_for_Real-Time_Operating_System)
-- [https://www.embedded.com/design/operating-systems/4437792/Why-and-how-to-measure-your-RTOS-performance](https://www.embedded.com/design/operating-systems/4437792/Why-and-how-to-measure-your-RTOS-performance)
+- [Why and how to measure your RTOS performance](https://www.embedded.com/design/operating-systems/4437792/Why-and-how-to-measure-your-RTOS-performance)
 
 ### I2C
 
@@ -13,6 +12,7 @@
 
 ## Papers
 
+- [Test Methodology for Real-Time Operating System](https://www.researchgate.net/publication/279842112_Test_Methodology_for_Real-Time_Operating_System)
 - [Operating Systems for Low-End Devices in the Internet of Things: a Survey](https://hal.inria.fr/hal-01245551/file/IoT-OS-survey.pdf)
   - Analyse of requirements for a low-end device's OS and survey of such systems.
   - _Tags: OS_.
