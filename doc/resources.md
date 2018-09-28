@@ -4,15 +4,11 @@
 
 ### Benchmarking
 
-- [https://www.researchgate.net/publication/279842112_Test_Methodology_for_Real-Time_Operating_System](https://www.researchgate.net/publication/279842112_Test_Methodology_for_Real-Time_Operating_System)
-- [https://www.embedded.com/design/operating-systems/4437792/Why-and-how-to-measure-your-RTOS-performance](https://www.embedded.com/design/operating-systems/4437792/Why-and-how-to-measure-your-RTOS-performance)
-
-### I2C
-
-- [https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial](https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial)
+- [Why and how to measure your RTOS performance](https://www.embedded.com/design/operating-systems/4437792/Why-and-how-to-measure-your-RTOS-performance)
 
 ## Papers
 
+- [Test Methodology for Real-Time Operating System](https://www.researchgate.net/publication/279842112_Test_Methodology_for_Real-Time_Operating_System)
 - [Operating Systems for Low-End Devices in the Internet of Things: a Survey](https://hal.inria.fr/hal-01245551/file/IoT-OS-survey.pdf)
   - Analyse of requirements for a low-end device's OS and survey of such systems.
   - _Tags: OS_.
@@ -55,3 +51,5 @@
 - [Performance study of real-time operating systems for internet of things devices](https://ieeexplore.ieee.org/document/8371785/)
   - Real-time focused performance evaluation.
   - _Tags: NoAccess; OS._
+- [Connecting the World of Embedded Mobiles: The RIOT Approach to Ubiquitous Networking for the IoT](https://arxiv.org/pdf/1801.02833.pdf)
+- [System Architecture Directions for Post-SoC/32-bit Networked Sensors](https://www.researchgate.net/publication/327561337_System_Architecture_Directions_for_Post-SoC32-bit_Networked_Sensors)
