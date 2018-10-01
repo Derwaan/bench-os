@@ -1,0 +1,28 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subfig}
+
+% use draft in order to replace figures by box of the size of the figure
+\addbibresource{bibliography}
+\begin{document}
+
+
+%%%%%%%% Tables %%%%%%
+\tableofcontents
+\listoffigures
+\listoftables
+
+%%%%%%% Abstract %%%%%
+ %\begin{abstract}
+ 
+ %\end{abstract}
+ 
+%%%%%% Introduction %%%
+\include{chapters/Introduction}
+
+%%%%%% Bibliography %%%
+\printbibliography
+\end{document}
