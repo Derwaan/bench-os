@@ -21,6 +21,8 @@
 - [RIOT OS: Towards an OS for the Internet of Things](https://hal.inria.fr/hal-00945122/document)
   - Short and not that interesting but still...
   - _Tags: RIOT; OS_.
+- [RIOT: an Open Source Operating System for Low-end Embedded Devices in the IoT](https://ieeexplore.ieee.org/document/8315125?reload=true)
+  - _Tags: RIOT; OS_.
 - [P2050/D2, Oct 2017 - IEEE Approved Draft Standard for Real-time Operating System (OS) for Small-scale Embedded Systems](https://ieeexplore.ieee.org/document/8283471/)
   - Draft Standard for Real-time Operating System.
   - _Tags: NoAccess; OS_.
