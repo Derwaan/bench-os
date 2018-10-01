@@ -4,16 +4,16 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{subfig}
+\usepackage{chngcntr}%%reset chapter count
+\counterwithin*{chapter}{part}
 
 % use draft in order to replace figures by box of the size of the figure
 \addbibresource{bibliography}
 \begin{document}
 
 
-%%%%%%%% Tables %%%%%%
+%%%%%%%% Table of contents %%%%%%
 \tableofcontents
-\listoffigures
-\listoftables
 
 %%%%%%% Abstract %%%%%
  %\begin{abstract}
@@ -21,7 +21,19 @@
  %\end{abstract}
  
 %%%%%% Introduction %%%
-\include{chapters/Introduction}
+\include{introduction/introduction}
+
+%%%%%% Part 1 %%%
+\include{part1/theory}
+
+%%%%%% Part 2 %%%
+\include{part2/benchmarking}
+
+%%%%%% Part 3 %%%
+\part{Results}
+
+\listoffigures
+\listoftables
 
 %%%%%% Bibliography %%%
 \printbibliography
