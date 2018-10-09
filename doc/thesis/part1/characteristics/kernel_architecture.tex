@@ -1,1 +1,31 @@
 \section{Kernel Architecture}
+
+% Explain kernel?
+
+\paragraph{}
+Operating Systems for Embedded Devices started appearing in the 00's.
+Since then design choices have evolved with the technology, reseach and trends.
+\\
+In this section, we'll explain the different kernel architectures commonly found in RTOS's and their impact on the operating system.
+
+\paragraph{Monolithic architecture}
+A monolithic kernel is composed of a single bloc of code running a single large process.
+Thanks to its simplicity, fast execution time and low memory footprint, it served as the norm for early RTOS's.
+Nonetheless, due to its design, it is prompt to critical failures, difficult to understand, maintain and update.
+
+\paragraph{Micro-kernel architecture}
+In a micro-kernel architecture, the kernel is broken down into separate processes:
+
+\begin{itemize}
+    \item The "microkernel", a minimalistic kernel,
+    \item The "servers" extending the functionalities of the microkernel.
+\end{itemize}
+
+The servers functionalities are often features of the kernel that can run in the user space rather than the kernel space (such as the file system, network features or device access).
+\\
+A micro-kernel architecture is considered more secure, as kernel-space functionalities and user-space functionalities are dissociated.
+It is also more reliable and resilient as if a server crashes, it does not stop the microkernel from running nor the others servers.
+The memory footprint can also be minimized since we can choose which server we want to use and only boot with those.
+From a maintainer point of view, it is also less complex, easier to understand and update.
+
+% some drawbacks? more sys calls, slower due to IPC
