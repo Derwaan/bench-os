@@ -33,4 +33,6 @@
 *.synctex.gz(busy)
 *.pdfsync
 
+bin/
+
 # TODO: Might need more rules
