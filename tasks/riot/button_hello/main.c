@@ -10,21 +10,17 @@
 
 #include "board.h"
 #include "periph/gpio.h"
-#include "periph_conf.h"
 
 static void hello(void *arg)
 {
     (void) arg;
     puts("Hello World!");
-
-    printf("You are running RIOT on a(n) %s board.\n", RIOT_BOARD);
-    printf("This board features a(n) %s MCU.\n", RIOT_MCU);
 }
 
 int main(void)
 {
     if (gpio_init_int(BTN0_PIN, BTN0_MODE, GPIO_FALLING, hello, NULL) != 0) {
-        puts("[FAILED] init BTN0!");
+        puts("[FAILED] init IRQ");
         return 1;
     }
 
