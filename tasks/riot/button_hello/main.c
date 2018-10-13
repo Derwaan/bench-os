@@ -11,19 +11,28 @@
 #include "board.h"
 #include "periph/gpio.h"
 
-static void hello(void *arg)
+static void handler(void *arg)
 {
     (void) arg;
-    puts("Hello World!");
+    if (gpio_read(GPIO_PIN(PORT_C, 3)) > 0) {
+        gpio_set(GPIO_PIN(PORT_C, 2));
+        puts("Hello World!");
+    }
+    else {
+        gpio_clear(GPIO_PIN(PORT_C, 2));
+        puts("Cleared!");
+    }
 }
 
 int main(void)
 {
-    if (gpio_init_int(BTN0_PIN, BTN0_MODE, GPIO_FALLING, hello, NULL) != 0) {
+    if (gpio_init_int(GPIO_PIN(PORT_C, 3), GPIO_IN_PD, GPIO_BOTH, handler, NULL) != 0) {
         puts("[FAILED] init IRQ");
         return 1;
     }
 
-    puts("On-board button test\n");
-    puts(" -- Try pressing button to test.\n");
+    if (gpio_init(GPIO_PIN(PORT_C, 2), GPIO_OUT) != 0) {
+        puts("[FAILED] init A0");
+        return 1;
+    }
 }
