@@ -10,27 +10,33 @@
 
 #include "board.h"
 #include "periph/gpio.h"
+#include "interrupt_latency.h"
 
-static void handler(void *arg)
+static void hello(void* arg)
 {
-    (void) arg;
-    if (gpio_read(GPIO_PIN(PORT_C, 3)) > 0) {
-        gpio_set(GPIO_PIN(PORT_C, 2));
-        puts("Hello World!");
-    }
-    else {
-        gpio_clear(GPIO_PIN(PORT_C, 2));
-        puts("Cleared!");
-    }
+    puts(arg);
 }
 
 int main(void)
 {
-    if (gpio_init_int(GPIO_PIN(PORT_C, 3), GPIO_IN_PD, GPIO_BOTH, handler, NULL) != 0) {
+
+    /* Create the handler
+     * - The callback function
+     * - The arguments of the callback
+     * - The input PIN
+     * - The output PIN
+     */
+    interrupt_latency_t* handler = create_handler(hello, "Hello, World!", GPIO_PIN(PORT_C, 3), GPIO_PIN(PORT_C, 2));
+
+    // Init the GPIO IRQ
+    // Who should init this ?
+    if (gpio_init_int(GPIO_PIN(PORT_C, 3), GPIO_IN_PD, GPIO_BOTH, handle, (void*) handler) != 0) {
         puts("[FAILED] init IRQ");
         return 1;
     }
 
+    // Init the output pin
+    // Who should init this ?
     if (gpio_init(GPIO_PIN(PORT_C, 2), GPIO_OUT) != 0) {
         puts("[FAILED] init A0");
         return 1;

@@ -13,6 +13,7 @@ RIOTBASE ?= $(CURDIR)/../../../os/riot/
 DEVELHELP ?= 1
 
 USEMODULE += periph_gpio_irq
+USEMODULE += interrupt_latency
 
 # Change this to 0 show compiler invocation lines by default:
 QUIET ?= 1

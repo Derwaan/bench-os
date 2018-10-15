@@ -5,7 +5,7 @@ APPLICATION = interrupt-latency
 BOARD ?= nucleo-f401re
 
 # This has to be the absolute path to the RIOT base directory:
-RIOTBASE ?= $(CURDIR)/../../../os/riot/
+RIOTBASE ?= $(CURDIR)/../../os/riot/
 
 # Comment this out to disable code in RIOT that does safety checking
 # which is not needed in a production environment but helps in the
