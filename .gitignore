@@ -34,3 +34,5 @@
 *.pdfsync
 
 # TODO: Might need more rules
+.vscode/
+bin/
