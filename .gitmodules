@@ -1,18 +1,3 @@
-[submodule "os/contiki"]
-	path = os/contiki
-	url = https://github.com/contiki-os/contiki
 [submodule "os/riot"]
 	path = os/riot
-	url = https://github.com/RIOT-OS/RIOT
-[submodule "os/zephyr"]
-	path = os/zephyr
-	url = git@github.com:zephyrproject-rtos/zephyr.git
-[submodule "os/contiki-ng"]
-	path = os/contiki-ng
-	url = git@github.com:contiki-ng/contiki-ng.git
-[submodule "os/mynewt"]
-	path = os/mynewt
-	url = git@github.com:apache/mynewt-core.git
-[submodule "os/mbed"]
-	path = os/mbed
-	url = git@github.com:ARMmbed/mbed-os.git
+	url = git@github.com:Derwaan/RIOT.git
