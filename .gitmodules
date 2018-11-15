@@ -3,7 +3,7 @@
 	url = https://github.com/contiki-os/contiki
 [submodule "os/riot"]
 	path = os/riot
-	url = https://github.com/RIOT-OS/RIOT
+	url = git@github.com:Derwaan/RIOT.git
 [submodule "os/zephyr"]
 	path = os/zephyr
 	url = git@github.com:zephyrproject-rtos/zephyr.git
