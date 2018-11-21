@@ -1,6 +1,6 @@
-[submodule "os/riot"]
-	path = os/riot
-	url = git@github.com:Derwaan/RIOT.git
 [submodule "os/contiki"]
 	path = os/contiki
 	url = git@github.com:Derwaan/contiki.git
+[submodule "os/riot"]
+	path = os/riot
+	url = git@github.com:Derwaan/RIOT.git
