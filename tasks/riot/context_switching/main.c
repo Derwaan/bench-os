@@ -5,17 +5,19 @@
 #include "xtimer.h"
 #include "timex.h"
 
+
 char threadA_stack[THREAD_STACKSIZE_MAIN];
 char threadB_stack[THREAD_STACKSIZE_MAIN];
+
+uint32_t time;
 
 void *threadA(void *arg)
 {
     (void) arg;
-    xtimer_ticks32_t last_wakeup = xtimer_now();
 
     while(1) {
-        xtimer_periodic_wakeup(&last_wakeup, INTERVAL);
-        puts("Thread A: echo");
+        time = xtimer_now_usec();
+        xtimer_sleep(1);
     }
     return NULL;
 }
@@ -23,11 +25,13 @@ void *threadA(void *arg)
 void *threadB(void *arg)
 {
     (void) arg;
-    xtimer_ticks32_t last_wakeup = xtimer_now();
 
     while(1){
-        xtimer_periodic_wakeup(&last_wakeup, INTERVAL);
-        puts("Thread B: echo");
+        if(time) {
+            uint32_t result = xtimer_now_usec() - time;
+            time = 0;
+            printf("##### From ThreadA to ThreadB: %"PRIu32"", result);
+        }
     }
     return NULL;
 }
@@ -42,7 +46,7 @@ int main(void)
                 threadA, NULL, "threadA");
 
     puts("Main: Creating threadB...");
-   thread_create(threadB_stack, sizeof(threadB_stack),
+    thread_create(threadB_stack, sizeof(threadB_stack),
                THREAD_PRIORITY_MAIN - 1, THREAD_CREATE_STACKTEST,
                threadB, NULL, "threadB");
     return 0;
