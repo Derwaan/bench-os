@@ -42,4 +42,4 @@ The metrics we are mesuring:
 - Memory usage
 - Scheduling policy
 
-## Bibliography
+## [Bibliography](doc/resources.md)
