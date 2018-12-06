@@ -1,0 +1,3 @@
+target.app: apps/blinky
+target.bsp: "@apache-mynewt-core/hw/bsp/nucleo-f401re"
+target.build_profile: debug
