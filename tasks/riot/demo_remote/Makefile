@@ -41,6 +41,7 @@ USEMODULE += netstats_ipv6
 USEMODULE += netstats_rpl
 # Buttons module & timers
 USEMODULE += periph_gpio_irq
+USEMODULE += bench_context_switching
 USEMODULE += xtimer
 
 # Comment this out to disable code in RIOT that does safety checking
