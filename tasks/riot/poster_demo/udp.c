@@ -40,7 +40,7 @@ void *_udp_server(void *args)
             puts("No data received");
         }
         else {
-            bench_ping(1);
+            bench_ping(1); // Should be on top ?
             server_buffer[res] = '\0';
             printf("Recvd: %s\n", server_buffer);
         }
@@ -49,17 +49,12 @@ void *_udp_server(void *args)
     return NULL;
 }
 
-int udp_send(int argc, char **argv)
+int udp_send(char* addr, char* port, char* payload)
 {
     int res;
     sock_udp_ep_t remote = { .family = AF_INET6 };
 
-    if (argc != 4) {
-        puts("Usage: udp <ipv6-addr> <port> <payload>");
-        return -1;
-    }
-
-    if (ipv6_addr_from_str((ipv6_addr_t *)&remote.addr, argv[1]) == NULL) {
+    if (ipv6_addr_from_str((ipv6_addr_t *)&remote.addr, addr) == NULL) {
         puts("Error: unable to parse destination address");
         return 1;
     }
@@ -68,26 +63,21 @@ int udp_send(int argc, char **argv)
         gnrc_netif_t *netif = gnrc_netif_iter(NULL);
         remote.netif = (uint16_t)netif->pid;
     }
-    remote.port = atoi(argv[2]);
-    if((res = sock_udp_send(NULL, argv[3], strlen(argv[3]), &remote)) < 0) {
+    remote.port = atoi(port);
+    if((res = sock_udp_send(NULL, payload, strlen(payload), &remote)) < 0) {
         puts("could not send");
     }
     else {
-        printf("Success: send %u byte to %s\n", (unsigned) res, argv[1]);
+        printf("Success: send %u byte to %s\n", (unsigned) res, addr);
     }
     return 0;
 }
 
-int udp_server(int argc, char **argv)
+int udp_server(char *port)
 {
-    if (argc != 2) {
-        puts("Usage: udps <port>");
-        return -1;
-    }
-
     if ((server_running == false) &&
         thread_create(server_stack, sizeof(server_stack), THREAD_PRIORITY_MAIN - 1,
-                      THREAD_CREATE_STACKTEST, _udp_server, argv[1], "UDP Server")
+                      THREAD_CREATE_STACKTEST, _udp_server, port, "UDP Server")
         <= KERNEL_PID_UNDEF) {
         return -1;
     }
