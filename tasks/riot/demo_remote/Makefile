@@ -1,5 +1,5 @@
 # name of your application
-APPLICATION = gnrc_networking
+APPLICATION = demo_remote
 
 # If no BOARD is found in the environment, use this default:
 # BOARD ?= native
@@ -23,22 +23,9 @@ BOARD_INSUFFICIENT_MEMORY := arduino-duemilanove arduino-mega2560 arduino-uno \
 USEMODULE += gnrc_netdev_default
 USEMODULE += auto_init_gnrc_netif
 # Specify the mandatory networking modules for IPv6 and UDP
-USEMODULE += gnrc_ipv6_router_default
+USEMODULE += gnrc_ipv6_default
 USEMODULE += gnrc_udp
-# Add a routing protocol
-USEMODULE += gnrc_rpl
-USEMODULE += auto_init_gnrc_rpl
-# This application dumps received packets to STDIO using the pktdump module
-USEMODULE += gnrc_pktdump
-# Additional networking modules that can be dropped if not needed
-USEMODULE += gnrc_icmpv6_echo
-# Add also the shell, some shell commands
-USEMODULE += shell
-USEMODULE += shell_commands
-USEMODULE += ps
-USEMODULE += netstats_l2
-USEMODULE += netstats_ipv6
-USEMODULE += netstats_rpl
+USEMODULE += gnrc_sock_udp
 # Buttons module & timers
 USEMODULE += periph_gpio_irq
 USEMODULE += bench_context_switching

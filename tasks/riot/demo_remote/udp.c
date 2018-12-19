@@ -36,7 +36,7 @@ static gnrc_netreg_entry_t server = GNRC_NETREG_ENTRY_INIT_PID(GNRC_NETREG_DEMUX
                                                                KERNEL_PID_UNDEF);
 
 
-static void send(char *addr_str, char *port_str, char *data, unsigned int num,
+void send(char *addr_str, char *port_str, char *data, unsigned int num,
                  unsigned int delay)
 {
     int iface;
@@ -106,7 +106,7 @@ static void send(char *addr_str, char *port_str, char *data, unsigned int num,
     }
 }
 
-static void start_server(char *port_str)
+void start_server(char *port_str, kernel_pid_t pid)
 {
     uint16_t port;
 
@@ -123,13 +123,13 @@ static void start_server(char *port_str)
         return;
     }
     /* start server (which means registering pktdump for the chosen port) */
-    server.target.pid = gnrc_pktdump_pid;
+    server.target.pid = pid;
     server.demux_ctx = (uint32_t)port;
     gnrc_netreg_register(GNRC_NETTYPE_UDP, &server);
     printf("Success: started UDP server on port %" PRIu16 "\n", port);
 }
 
-static void stop_server(void)
+void stop_server(void)
 {
     /* check if server is running at all */
     if (server.target.pid == KERNEL_PID_UNDEF) {
@@ -140,52 +140,4 @@ static void stop_server(void)
     gnrc_netreg_unregister(GNRC_NETTYPE_UDP, &server);
     server.target.pid = KERNEL_PID_UNDEF;
     puts("Success: stopped UDP server");
-}
-
-int udp_cmd(int argc, char **argv)
-{
-    if (argc < 2) {
-        printf("usage: %s [send|server]\n", argv[0]);
-        return 1;
-    }
-
-    if (strcmp(argv[1], "send") == 0) {
-        uint32_t num = 1;
-        uint32_t delay = 1000000;
-        if (argc < 5) {
-            printf("usage: %s send <addr> <port> <data> [<num> [<delay in us>]]\n",
-                   argv[0]);
-            return 1;
-        }
-        if (argc > 5) {
-            num = atoi(argv[5]);
-        }
-        if (argc > 6) {
-            delay = atoi(argv[6]);
-        }
-        send(argv[2], argv[3], argv[4], num, delay);
-    }
-    else if (strcmp(argv[1], "server") == 0) {
-        if (argc < 3) {
-            printf("usage: %s server [start|stop]\n", argv[0]);
-            return 1;
-        }
-        if (strcmp(argv[2], "start") == 0) {
-            if (argc < 4) {
-                printf("usage %s server start <port>\n", argv[0]);
-                return 1;
-            }
-            start_server(argv[3]);
-        }
-        else if (strcmp(argv[2], "stop") == 0) {
-            stop_server();
-        }
-        else {
-            puts("error: invalid command");
-        }
-    }
-    else {
-        puts("error: invalid command");
-    }
-    return 0;
 }
