@@ -36,3 +36,5 @@
 # TODO: Might need more rules
 .vscode/
 bin/
+# For mynewt
+repos/

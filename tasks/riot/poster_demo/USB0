@@ -1,0 +1,2027 @@
+[1;32mBuilding application "poster_demo" for "remote-reva" with MCU "cc2538".[0m
+
+"make" -C /home/derwaan/codes/bench-os/os/riot/boards/remote-reva
+"make" -C /home/derwaan/codes/bench-os/os/riot/boards/common/remote
+"make" -C /home/derwaan/codes/bench-os/os/riot/core
+"make" -C /home/derwaan/codes/bench-os/os/riot/cpu/cc2538
+"make" -C /home/derwaan/codes/bench-os/os/riot/cpu/cc2538/periph
+"make" -C /home/derwaan/codes/bench-os/os/riot/cpu/cc2538/radio
+"make" -C /home/derwaan/codes/bench-os/os/riot/cpu/cortexm_common
+"make" -C /home/derwaan/codes/bench-os/os/riot/cpu/cortexm_common/periph
+"make" -C /home/derwaan/codes/bench-os/os/riot/drivers
+"make" -C /home/derwaan/codes/bench-os/os/riot/drivers/netdev_ieee802154
+"make" -C /home/derwaan/codes/bench-os/os/riot/drivers/periph_common
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/auto_init
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/auto_init/netif
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/bench_context_switching
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/div
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/evtimer
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/fmt
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/isrpipe
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/luid
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/crosslayer/inet_csum
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/netapi
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/netif
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/netif/hdr
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/netreg
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/network_layer/icmpv6
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/network_layer/ipv6
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/network_layer/ipv6/hdr
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/network_layer/ipv6/nib
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/network_layer/ndp
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/network_layer/sixlowpan
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/network_layer/sixlowpan/ctx
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/network_layer/sixlowpan/frag
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/network_layer/sixlowpan/iphc
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/network_layer/sixlowpan/nd
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/pkt
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/pktbuf
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/pktbuf_static
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/sock
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/sock/udp
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/gnrc/transport_layer/udp
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/link_layer/ieee802154
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/network_layer/icmpv6
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/network_layer/ipv6/addr
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/network_layer/ipv6/hdr
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/network_layer/sixlowpan
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/net/transport_layer/udp
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/newlib_syscalls_default
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/random
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/random/tinymt32
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/stdio_uart
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/tsrb
+"make" -C /home/derwaan/codes/bench-os/os/riot/sys/xtimer
+   text	   data	    bss	    dec	    hex	filename
+  39968	    512	  16452	  56932	   de64	/home/derwaan/codes/bench-os/tasks/riot/poster_demo/bin/remote-reva/poster_demo.elf
+/home/derwaan/codes/bench-os/os/riot/dist/tools/cc2538-bsl/cc2538-bsl.py -p "/dev/ttyUSB0" -e -w -v -b 115200 /home/derwaan/codes/bench-os/tasks/riot/poster_demo/bin/remote-reva/poster_demo.bin
+/home/derwaan/codes/bench-os/os/riot/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+2018-12-19 15:10:18,971 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-12-19 15:10:20,789 - INFO # main(): This is RIOT! (Version: 2018.10-devel-1543-g66fbd-context_switching)
+2018-12-19 15:10:20,790 - INFO # [SUCCESS] Button initialized!
+2018-12-19 15:10:20,791 - INFO # Success: started UDP server on port 8808
+2018-12-19 15:10:20,792 - INFO # [BENCH_CONTEXT_SWITCHING] 0 2 5
+2018-12-19 15:10:50,833 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:51,167 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:51,312 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:51,314 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:51,468 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:51,632 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:51,805 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:51,808 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:51,949 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:52,110 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:52,264 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:52,440 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:10:53,184 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:10:53,184 - INFO # Recvd: Hello
+2018-12-19 15:10:53,185 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:10:53,335 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:10:53,335 - INFO # Recvd: Hello
+2018-12-19 15:10:53,337 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:10:53,417 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:10:53,418 - INFO # Recvd: Hello
+2018-12-19 15:10:53,420 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:10:53,522 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:10:53,523 - INFO # Recvd: Hello
+2018-12-19 15:10:53,524 - INFO # Recvd: Hello
+2018-12-19 15:10:53,525 - INFO # [BENCH_C[BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:10:53,526 - INFO # Recvd: Hello
+2018-12-19 15:10:53,527 - INFO # ello
+2018-12-19 15:10:53,528 - INFO # T_SWITCHING] 2 1 5
+2018-12-19 15:10:53,529 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:10:53,672 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:10:53,673 - INFO # Recvd: Hello
+2018-12-19 15:10:53,674 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:10:53,720 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:10:53,721 - INFO # Recvd: Hello
+2018-12-19 15:10:53,722 - INFO # Recvd: Hello
+2018-12-19 15:10:53,724 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:11:11,353 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:11:11,354 - INFO # Recvd: Hello
+2018-12-19 15:11:11,356 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:11:11,365 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:11:11,366 - INFO # Recvd: Hello
+2018-12-19 15:11:11,368 - INFO # Recvd: Hello
+2018-12-19 15:11:11,369 - INFO # Recvd: Hello
+2018-12-19 15:11:11,369 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:11:11,854 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:11:11,855 - INFO # Recvd: Hello
+2018-12-19 15:11:11,856 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:11:11,937 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:11:11,938 - INFO # Recvd: Hello
+2018-12-19 15:11:11,938 - INFO # Recvd: Hello
+2018-12-19 15:11:11,939 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:11:12,396 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:11:12,398 - INFO # Recvd: Hello
+2018-12-19 15:11:12,399 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:11:12,942 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:11:12,943 - INFO # Recvd: Hello
+2018-12-19 15:11:12,944 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:11:13,677 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:11:13,677 - INFO # Recvd: Hello
+2018-12-19 15:11:13,678 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:11:13,757 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:11:13,758 - INFO # Recvd: Hello
+2018-12-19 15:11:13,759 - INFO # Recvd: Hello
+2018-12-19 15:11:13,760 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:11:14,677 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:11:14,678 - INFO # Recvd: Hello
+2018-12-19 15:11:14,678 - INFO # Recvd: Hello
+2018-12-19 15:11:14,680 - INFO # [BENCH_CONTEXT_SWIT[BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:11:14,680 - INFO # Recvd: Hello
+2018-12-19 15:11:14,680 - INFO # CHING] 2 1 5
+2018-12-19 15:11:14,681 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:11:16,552 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:11:17,708 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:11:18,099 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:11:18,393 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:13:27,586 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:27,587 - INFO # Recvd: Hello
+2018-12-19 15:13:27,589 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:27,650 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:27,651 - INFO # Recvd: Hello
+2018-12-19 15:13:27,652 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:28,130 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:13:28,132 - INFO # Recvd: Hello
+2018-12-19 15:13:28,133 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:13:28,487 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:28,488 - INFO # Recvd: Hello
+2018-12-19 15:13:28,489 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:28,845 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:28,846 - INFO # Recvd: Hello
+2018-12-19 15:13:28,847 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:13:28,900 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:13:28,901 - INFO # Recvd: Hello
+2018-12-19 15:13:28,902 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:29,213 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:29,214 - INFO # Recvd: Hello
+2018-12-19 15:13:29,215 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:29,577 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:13:29,578 - INFO # Recvd: Hello
+2018-12-19 15:13:29,579 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:29,992 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:29,993 - INFO # Recvd: Hello
+2018-12-19 15:13:29,994 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:30,433 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:30,434 - INFO # Recvd: Hello
+2018-12-19 15:13:30,435 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:30,901 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:13:30,901 - INFO # Recvd: Hello
+2018-12-19 15:13:30,902 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:31,515 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:13:31,516 - INFO # Recvd: Hello
+2018-12-19 15:13:31,517 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:13:31,593 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:31,594 - INFO # Recvd: Hello
+2018-12-19 15:13:31,595 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:31,986 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:31,987 - INFO # Recvd: Hello
+2018-12-19 15:13:31,988 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:32,059 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:32,060 - INFO # Recvd: Hello
+2018-12-19 15:13:32,060 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:13:32,789 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:32,790 - INFO # Recvd: Hello
+2018-12-19 15:13:32,791 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:13:33,181 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:33,182 - INFO # Recvd: Hello
+2018-12-19 15:13:33,184 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:13:33,279 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:13:33,281 - INFO # Recvd: Hello
+2018-12-19 15:13:33,282 - INFO # Recvd: Hello
+2018-12-19 15:13:33,283 - INFO # Recvd: Hello
+2018-12-19 15:13:33,284 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:32:18,627 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:18,705 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:19,221 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:19,547 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:19,748 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:19,813 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:19,927 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:20,107 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:20,315 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:20,518 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:20,691 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:20,854 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:20,996 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:33,117 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:33,302 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:33,303 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:33,381 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:33,488 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:33,656 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:33,826 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:34,007 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:43,313 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:43,557 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:43,768 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:43,975 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:44,146 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:44,315 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:44,496 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:44,583 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:32:44,691 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:11,549 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:11,959 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:12,179 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:12,353 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:12,423 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:12,424 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:12,500 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:12,681 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:12,798 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:12,844 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:14,292 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:14,367 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:14,503 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:14,645 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:14,793 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:14,795 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:14,932 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:15,102 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:15,252 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:15,402 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:15,538 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:34:44,261 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:44,261 - INFO # Recvd: Hello
+2018-12-19 15:34:44,263 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:44,368 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:44,369 - INFO # Recvd: Hello
+2018-12-19 15:34:44,371 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:44,520 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:44,522 - INFO # Recvd: Hello
+2018-12-19 15:34:44,524 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:44,588 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:44,589 - INFO # Recvd: Hello
+2018-12-19 15:34:44,591 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:44,681 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:44,683 - INFO # Recvd: Hello
+2018-12-19 15:34:44,687 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:44,820 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:44,821 - INFO # Recvd: Hello
+2018-12-19 15:34:44,823 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:47,864 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:47,865 - INFO # Recvd: Hello
+2018-12-19 15:34:47,867 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:48,053 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:48,054 - INFO # Recvd: Hello
+2018-12-19 15:34:48,055 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:48,132 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:48,133 - INFO # Recvd: Hello
+2018-12-19 15:34:48,134 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:48,259 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:48,260 - INFO # Recvd: Hello
+2018-12-19 15:34:48,260 - INFO # Recvd: Hello
+2018-12-19 15:34:48,261 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:48,441 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:48,442 - INFO # Recvd: Hello
+2018-12-19 15:34:48,444 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:48,638 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:48,639 - INFO # Recvd: Hello
+2018-12-19 15:34:48,640 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:48,900 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:48,901 - INFO # Recvd: Hello
+2018-12-19 15:34:48,903 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:48,938 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:34:48,939 - INFO # Recvd: Hello
+2018-12-19 15:34:48,939 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:50,591 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:50,592 - INFO # Recvd: Hello
+2018-12-19 15:34:50,594 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:50,752 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:34:50,753 - INFO # Recvd: Hello
+2018-12-19 15:34:50,754 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:50,832 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:34:50,834 - INFO # Recvd: Hello
+2018-12-19 15:34:50,836 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:50,938 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:50,939 - INFO # Recvd: Hello
+2018-12-19 15:34:50,940 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:51,119 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:51,121 - INFO # Recvd: Hello
+2018-12-19 15:34:51,123 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:51,297 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:34:51,298 - INFO # Recvd: Hello
+2018-12-19 15:34:51,298 - INFO # Recvd: Hello
+2018-12-19 15:34:51,299 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:51,477 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:34:51,479 - INFO # Recvd: Hello
+2018-12-19 15:34:51,481 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:51,639 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:51,640 - INFO # Recvd: Hello
+2018-12-19 15:34:51,641 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:51,787 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:51,788 - INFO # Recvd: Hello
+2018-12-19 15:34:51,790 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:51,911 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:51,912 - INFO # Recvd: Hello
+2018-12-19 15:34:51,913 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:53,303 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:53,304 - INFO # Recvd: Hello
+2018-12-19 15:34:53,305 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:53,565 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:53,566 - INFO # Recvd: Hello
+2018-12-19 15:34:53,567 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:54,001 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:34:54,002 - INFO # Recvd: Hello
+2018-12-19 15:34:54,003 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:54,340 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:54,341 - INFO # Recvd: Hello
+2018-12-19 15:34:54,342 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:54,550 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:54,551 - INFO # Recvd: Hello
+2018-12-19 15:34:54,552 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:54,626 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:54,627 - INFO # Recvd: Hello
+2018-12-19 15:34:54,628 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:54,752 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:54,753 - INFO # Recvd: Hello
+2018-12-19 15:34:54,754 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:56,249 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:56,251 - INFO # Recvd: Hello
+2018-12-19 15:34:56,252 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:56,444 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:34:56,445 - INFO # Recvd: Hello
+2018-12-19 15:34:56,448 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:56,630 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:56,631 - INFO # Recvd: Hello
+2018-12-19 15:34:56,633 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:56,810 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:56,811 - INFO # Recvd: Hello
+2018-12-19 15:34:56,813 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:56,973 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:56,974 - INFO # Recvd: Hello
+2018-12-19 15:34:56,975 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:57,021 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:57,022 - INFO # Recvd: Hello
+2018-12-19 15:34:57,024 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:57,120 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:57,122 - INFO # Recvd: Hello
+2018-12-19 15:34:57,125 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:57,262 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:57,263 - INFO # Recvd: Hello
+2018-12-19 15:34:57,264 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:57,406 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:34:57,406 - INFO # Recvd: Hello
+2018-12-19 15:34:57,408 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:57,562 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:34:57,564 - INFO # Recvd: Hello
+2018-12-19 15:34:57,566 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:57,597 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:57,597 - INFO # Recvd: Hello
+2018-12-19 15:34:57,599 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:34:57,693 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:57,695 - INFO # Recvd: Hello
+2018-12-19 15:34:57,696 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:34:57,803 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:34:57,804 - INFO # Recvd: Hello
+2018-12-19 15:34:57,805 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:44:45,277 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:45,919 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:46,763 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:47,501 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:47,628 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:53,047 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:53,448 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:54,131 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:55,116 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:55,692 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:55,829 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:56,309 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:56,961 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:57,317 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:57,840 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:57,849 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:58,302 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:44:58,757 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:45:01,838 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:45:01,839 - INFO # Recvd: Hello
+2018-12-19 15:45:01,840 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:45:01,968 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:45:01,970 - INFO # Recvd: Hello
+2018-12-19 15:45:01,971 - INFO # Recvd: Hello
+2018-12-19 15:45:01,972 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:45:01,986 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:45:01,986 - INFO # Recvd: Hello
+2018-12-19 15:45:01,987 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:45:02,651 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:45:02,653 - INFO # Recvd: Hello
+2018-12-19 15:45:02,654 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:45:03,249 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:45:03,250 - INFO # Recvd: Hello
+2018-12-19 15:45:03,251 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:47:35,870 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:47:36,163 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:47:36,166 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:47:36,355 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:41,555 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:48:41,556 - INFO # Recvd: Hello
+2018-12-19 15:48:41,557 - INFO # Recvd: Hello
+2018-12-19 15:48:41,558 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:48:41,731 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:48:41,732 - INFO # Recvd: Hello
+2018-12-19 15:48:41,733 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:48:41,874 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:48:41,875 - INFO # Recvd: Hello
+2018-12-19 15:48:41,877 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:48:42,034 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:48:42,035 - INFO # Recvd: Hello
+2018-12-19 15:48:42,036 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:48:42,375 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:48:42,376 - INFO # Recvd: Hello
+2018-12-19 15:48:42,376 - INFO # Recvd: Hello
+2018-12-19 15:48:42,377 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:48:42,604 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:48:42,605 - INFO # Recvd: Hello
+2018-12-19 15:48:42,607 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:48:42,608 - INFO # Recvd: Hello
+2018-12-19 15:48:42,609 - INFO # Recvd: Hello
+2018-12-19 15:48:42,611 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:48:42,612 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:48:55,386 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:55,610 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:55,775 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:55,845 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:55,943 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:56,088 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:56,092 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:56,293 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:56,455 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:56,612 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:56,688 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:56,747 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:56,750 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:56,955 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:57,157 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:57,294 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:57,395 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:57,640 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:57,860 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:57,987 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:58,178 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:48:58,400 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:26,844 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:26,844 - INFO # Recvd: Hello
+2018-12-19 15:49:26,845 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:26,893 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:27,103 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:27,210 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:49:27,211 - INFO # Recvd: Hello
+2018-12-19 15:49:27,211 - INFO # Recvd: Hello
+2018-12-19 15:49:27,212 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:27,708 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:27,710 - INFO # Recvd: Hello
+2018-12-19 15:49:27,713 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:27,763 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:28,100 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:28,101 - INFO # Recvd: Hello
+2018-12-19 15:49:28,102 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:28,115 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:28,343 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:28,367 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:28,368 - INFO # Recvd: Hello
+2018-12-19 15:49:28,369 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:28,540 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:28,625 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:28,626 - INFO # Recvd: Hello
+2018-12-19 15:49:28,628 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:28,661 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:28,779 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:28,819 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:28,820 - INFO # Recvd: Hello
+2018-12-19 15:49:28,821 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:28,969 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:29,056 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:29,058 - INFO # Recvd: Hello
+2018-12-19 15:49:29,059 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:29,230 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:29,396 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:29,397 - INFO # Recvd: Hello
+2018-12-19 15:49:29,399 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:29,488 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:29,632 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:29,633 - INFO # Recvd: Hello
+2018-12-19 15:49:29,635 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:29,705 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:29,741 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:29,742 - INFO # Recvd: Hello
+2018-12-19 15:49:29,743 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:49:35,259 - INFO # main(): This is RIOT! (Version: 2018.10-devel-1543-g66fbd-context_switching)
+2018-12-19 15:49:35,261 - INFO # [SUCCESS] Button initialized!
+2018-12-19 15:49:35,264 - INFO # Success: started UDP server on port 8808
+2018-12-19 15:49:35,266 - INFO # [BENCH_CONTEXT_SWITCHING] 0 2 5
+2018-12-19 15:49:36,316 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:36,891 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:37,430 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:37,818 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:39,294 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:39,295 - INFO # Recvd: Hello
+2018-12-19 15:49:39,296 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:49:42,930 - INFO # main(): This is RIOT! (Version: 2018.10-devel-1543-g66fbd-context_switching)
+2018-12-19 15:49:42,932 - INFO # [SUCCESS] Button initialized!
+2018-12-19 15:49:42,932 - INFO # Success: started UDP server on port 8808
+2018-12-19 15:49:42,933 - INFO # [BENCH_CONTEXT_SWITCHING] 0 2 5
+2018-12-19 15:49:44,037 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:44,038 - INFO # Recvd: Hello
+2018-12-19 15:49:44,040 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:49:44,049 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:44,577 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:49:44,577 - INFO # Recvd: Hello
+2018-12-19 15:49:44,578 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:49:44,601 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:45,059 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:49:45,059 - INFO # Recvd: Hello
+2018-12-19 15:49:45,061 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2Success: send 5 byte to ff02::1
+2018-12-19 15:49:45,063 - INFO # :1
+2018-12-19 15:49:45,348 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:45,368 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:45,368 - INFO # Recvd: Hello
+2018-12-19 15:49:45,369 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:49:45,551 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:49:45,567 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:49:45,568 - INFO # Recvd: Hello
+2018-12-19 15:49:45,570 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:10,602 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:50:10,603 - INFO # Recvd: Hello
+2018-12-19 15:50:10,604 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:10,820 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:50:10,821 - INFO # Recvd: Hello
+2018-12-19 15:50:10,823 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:10,973 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:50:10,973 - INFO # Recvd: Hello
+2018-12-19 15:50:10,974 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:11,111 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:50:11,112 - INFO # Recvd: Hello
+2018-12-19 15:50:11,113 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:20,178 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:20,618 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:20,894 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:21,079 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:21,266 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:21,433 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:21,576 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:21,739 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:21,897 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:22,012 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:24,080 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:50:24,081 - INFO # Recvd: Hello
+2018-12-19 15:50:24,083 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:24,276 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:50:24,277 - INFO # Recvd: Hello
+2018-12-19 15:50:24,279 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:31,400 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:31,590 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:31,720 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:31,879 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:33,574 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:33,665 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:33,906 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:34,167 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:34,353 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:34,542 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:34,754 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:35,505 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:35,738 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:35,908 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:36,096 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:36,261 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:36,312 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:36,314 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:36,428 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:36,586 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:36,743 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:36,804 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:36,913 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:37,082 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:37,249 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:38,494 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:50:38,494 - INFO # Recvd: Hello
+2018-12-19 15:50:38,495 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:50:38,813 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:50:38,814 - INFO # Recvd: Hello
+2018-12-19 15:50:38,815 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:38,988 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:50:38,989 - INFO # Recvd: Hello
+2018-12-19 15:50:38,991 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:39,133 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:50:39,133 - INFO # Recvd: Hello
+2018-12-19 15:50:39,135 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:39,280 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:50:39,281 - INFO # Recvd: Hello
+2018-12-19 15:50:39,284 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:39,424 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:50:39,425 - INFO # Recvd: Hello
+2018-12-19 15:50:39,426 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:39,567 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:50:39,568 - INFO # Recvd: Hello
+2018-12-19 15:50:39,570 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:39,622 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:50:39,623 - INFO # Recvd: Hello
+2018-12-19 15:50:39,623 - INFO # Recvd: Hello
+2018-12-19 15:50:39,624 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:50:44,502 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:44,694 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:44,863 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:45,013 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:45,175 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:45,332 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:45,487 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:45,645 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:45,794 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:45,957 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:46,105 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:46,264 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:46,428 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:46,614 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:46,770 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:46,935 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:50:47,129 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:25,390 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:51:25,391 - INFO # Recvd: Hello
+2018-12-19 15:51:25,392 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:51:25,409 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:51:25,410 - INFO # Recvd: Hello
+2018-12-19 15:51:25,411 - INFO # Recvd: Hello
+2018-12-19 15:51:25,412 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:51:25,448 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:51:25,449 - INFO # Recvd: Hello
+2018-12-19 15:51:25,450 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:51:25,549 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:51:25,550 - INFO # Recvd: Hello
+2018-12-19 15:51:25,552 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:51:25,703 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:51:25,704 - INFO # Recvd: Hello
+2018-12-19 15:51:25,704 - INFO # Recvd: Hello
+2018-12-19 15:51:25,706 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:51:25,845 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:51:25,846 - INFO # Recvd: Hello
+2018-12-19 15:51:25,847 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:51:26,771 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:26,911 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:27,053 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:27,172 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:27,296 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:27,433 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:27,728 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:27,815 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:27,969 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:27,972 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:28,781 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:51:28,782 - INFO # Recvd: Hello
+2018-12-19 15:51:28,784 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:51:28,991 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:51:28,992 - INFO # Recvd: Hello
+2018-12-19 15:51:28,993 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:51:29,170 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:51:29,171 - INFO # Recvd: Hello
+2018-12-19 15:51:29,172 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:51:29,411 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:51:29,411 - INFO # Recvd: Hello
+2018-12-19 15:51:29,412 - INFO # Recvd: Hello
+2018-12-19 15:51:29,413 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:51:29,935 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:51:29,936 - INFO # Recvd: Hello
+2018-12-19 15:51:29,937 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:51:34,228 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:35,422 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:35,648 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:35,740 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:51:35,741 - INFO # Recvd: Hello
+2018-12-19 15:51:35,742 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:51:35,844 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:36,044 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:36,282 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:36,465 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:36,655 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:36,875 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:37,092 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:37,286 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:37,477 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:37,697 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:37,889 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:38,251 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:38,404 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:38,547 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:38,669 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:38,832 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:51:38,833 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 15:52:31,951 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:31,953 - INFO # Recvd: Hello
+2018-12-19 15:52:31,954 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:52:32,034 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:32,034 - INFO # Recvd: Hello
+2018-12-19 15:52:32,035 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:46,758 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:52:46,759 - INFO # Recvd: Hello
+2018-12-19 15:52:46,761 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:47,234 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:52:47,235 - INFO # Recvd: Hello
+2018-12-19 15:52:47,236 - INFO # Recvd: Hello
+2018-12-19 15:52:47,237 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:47,616 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:47,617 - INFO # Recvd: Hello
+2018-12-19 15:52:47,618 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:47,890 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:52:47,892 - INFO # Recvd: Hello
+2018-12-19 15:52:47,893 - INFO # Recvd: Hello
+2018-12-19 15:52:47,895 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:47,991 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:47,993 - INFO # Recvd: Hello
+2018-12-19 15:52:47,996 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:48,152 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:52:48,153 - INFO # Recvd: Hello
+2018-12-19 15:52:48,156 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:48,234 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 15:52:48,235 - INFO # Recvd: Hello
+2018-12-19 15:52:48,236 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:48,244 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:48,245 - INFO # Recvd: Hello
+2018-12-19 15:52:48,246 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:48,403 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:48,404 - INFO # Recvd: Hello
+2018-12-19 15:52:48,406 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:48,502 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:48,502 - INFO # Recvd: Hello
+2018-12-19 15:52:48,503 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:48,619 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:48,619 - INFO # Recvd: Hello
+2018-12-19 15:52:48,620 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:48,816 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:48,816 - INFO # Recvd: Hello
+2018-12-19 15:52:48,817 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:49,111 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:49,112 - INFO # Recvd: Hello
+2018-12-19 15:52:49,114 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 15:52:49,392 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:49,393 - INFO # Recvd: Hello
+2018-12-19 15:52:49,395 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 15:52:49,606 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 15:52:49,607 - INFO # Recvd: Hello
+2018-12-19 15:52:49,609 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:00:42,553 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:00:43,184 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:00:43,366 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:00:43,839 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:00:43,841 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:00:44,591 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:00:44,706 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:00:46,713 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:00:46,714 - INFO # Recvd: Hello
+2018-12-19 16:00:46,716 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:00:46,898 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:00:46,898 - INFO # Recvd: Hello
+2018-12-19 16:00:46,899 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:00:47,756 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:00:47,757 - INFO # Recvd: Hello
+2018-12-19 16:00:47,759 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:00:48,175 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:00:48,176 - INFO # Recvd: Hello
+2018-12-19 16:00:48,176 - INFO # Recvd: Hello
+2018-12-19 16:00:48,178 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:00:48,287 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:00:48,288 - INFO # Recvd: Hello
+2018-12-19 16:00:48,289 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:02:40,831 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:02:42,424 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:02:45,327 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:05:00,768 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:05:00,772 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:05:02,476 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:05:03,887 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:05:05,967 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:05:05,968 - INFO # Recvd: Hello
+2018-12-19 16:05:05,970 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:05:06,102 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:05:06,102 - INFO # Recvd: Hello
+2018-12-19 16:05:06,103 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:05:06,953 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:05:06,955 - INFO # Recvd: Hello
+2018-12-19 16:05:06,959 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:05:09,736 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:05:09,736 - INFO # Recvd: Hello
+2018-12-19 16:05:09,737 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:10:06,656 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:08,034 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:08,051 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:11,106 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:12,463 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:13,484 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:15,382 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:16,532 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:17,621 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:18,828 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:18,897 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:10:21,630 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:10:21,632 - INFO # Recvd: Hello
+2018-12-19 16:10:21,634 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:10:21,707 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:10:21,707 - INFO # Recvd: Hello
+2018-12-19 16:10:21,708 - INFO # Recvd: Hello
+2018-12-19 16:10:21,709 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:10:22,292 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:10:22,293 - INFO # Recvd: Hello
+2018-12-19 16:10:22,294 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:11:48,808 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-19 16:11:49,809 - WARNING # Try to reconnect to /dev/ttyUSB0 again...
+2018-12-19 16:11:49,811 - INFO # Reconnected to serial port /dev/ttyUSB0
+2018-12-19 16:12:29,874 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:12:29,875 - INFO # Recvd: Hello
+2018-12-19 16:12:29,877 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:12:30,046 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:12:30,047 - INFO # Recvd: Hello
+2018-12-19 16:12:30,048 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:12:30,179 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:12:30,179 - INFO # Recvd: Hello
+2018-12-19 16:12:30,180 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:12:33,480 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:12:33,482 - INFO # Recvd: Hello
+2018-12-19 16:12:33,484 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:12:45,941 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:12:45,941 - INFO # Recvd: Hello
+2018-12-19 16:12:45,942 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:12:57,513 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:12:57,514 - INFO # Recvd: Hello
+2018-12-19 16:12:57,515 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:12:58,482 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:12:58,484 - INFO # Recvd: Hello
+2018-12-19 16:12:58,487 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:12:59,169 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:12:59,171 - INFO # Recvd: Hello
+2018-12-19 16:12:59,173 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:15:55,265 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:15:55,267 - INFO # Recvd: Hello
+2018-12-19 16:15:55,269 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:16:02,468 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:02,469 - INFO # Recvd: Hello
+2018-12-19 16:16:02,470 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:16:03,545 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:03,546 - INFO # Recvd: Hello
+2018-12-19 16:16:03,547 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:16:04,952 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:04,953 - INFO # Recvd: Hello
+2018-12-19 16:16:04,954 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:16:05,044 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:16:05,045 - INFO # Recvd: Hello
+2018-12-19 16:16:05,047 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:16:05,331 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:05,333 - INFO # Recvd: Hello
+2018-12-19 16:16:05,335 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:16:05,638 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:05,640 - INFO # Recvd: Hello
+2018-12-19 16:16:05,643 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:16:06,038 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:06,039 - INFO # Recvd: Hello
+2018-12-19 16:16:06,040 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:16:06,359 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:06,360 - INFO # Recvd: Hello
+2018-12-19 16:16:06,362 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:16:06,671 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:06,673 - INFO # Recvd: Hello
+2018-12-19 16:16:06,674 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:16:07,002 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:07,002 - INFO # Recvd: Hello
+2018-12-19 16:16:07,003 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:16:07,391 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:07,392 - INFO # Recvd: Hello
+2018-12-19 16:16:07,393 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:16:13,225 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:16:13,228 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:16:13,284 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:16:15,915 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:16:17,713 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:16:20,628 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:16:21,776 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:16:39,019 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:39,020 - INFO # Recvd: Hello
+2018-12-19 16:16:39,021 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:16:44,433 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:16:44,435 - INFO # Recvd: Hello
+2018-12-19 16:16:44,437 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:02,740 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:17:02,742 - INFO # Recvd: Hello
+2018-12-19 16:17:02,743 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:04,239 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:17:04,240 - INFO # Recvd: Hello
+2018-12-19 16:17:04,242 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:05,775 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:05,777 - INFO # Recvd: Hello
+2018-12-19 16:17:05,779 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:06,843 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:06,843 - INFO # Recvd: Hello
+2018-12-19 16:17:06,844 - INFO # Recvd: Hello
+2018-12-19 16:17:06,844 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:07,104 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:07,105 - INFO # Recvd: Hello
+2018-12-19 16:17:07,106 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:07,378 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:07,379 - INFO # Recvd: Hello
+2018-12-19 16:17:07,382 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:07,634 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:07,636 - INFO # Recvd: Hello
+2018-12-19 16:17:07,638 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:07,885 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:17:07,886 - INFO # Recvd: Hello
+2018-12-19 16:17:07,889 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:08,299 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:08,301 - INFO # Recvd: Hello
+2018-12-19 16:17:08,302 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:08,516 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:08,518 - INFO # Recvd: Hello
+2018-12-19 16:17:08,520 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:08,757 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:17:08,758 - INFO # Recvd: Hello
+2018-12-19 16:17:08,759 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:08,978 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:17:08,978 - INFO # Recvd: Hello
+2018-12-19 16:17:08,979 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:09,235 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:09,236 - INFO # Recvd: Hello
+2018-12-19 16:17:09,237 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:10,413 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:10,413 - INFO # Recvd: Hello
+2018-12-19 16:17:10,414 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:10,959 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:10,960 - INFO # Recvd: Hello
+2018-12-19 16:17:10,962 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:12,620 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:12,621 - INFO # Recvd: Hello
+2018-12-19 16:17:12,624 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:13,308 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:17:13,309 - INFO # Recvd: Hello
+2018-12-19 16:17:13,311 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:32,452 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:17:32,453 - INFO # Recvd: Hello
+2018-12-19 16:17:32,454 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:34,579 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:34,604 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:34,605 - INFO # Recvd: Hello
+2018-12-19 16:17:34,606 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:34,731 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:35,740 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:17:35,742 - INFO # Recvd: Hello
+2018-12-19 16:17:35,744 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:36,055 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:36,363 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:36,591 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:36,793 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:36,932 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:36,933 - INFO # Recvd: Hello
+2018-12-19 16:17:36,935 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:37,123 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:37,182 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:37,186 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:37,329 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:37,533 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:37,612 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:37,614 - INFO # Recvd: Hello
+2018-12-19 16:17:37,615 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:37,693 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:37,775 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:17:37,776 - INFO # Recvd: Hello
+2018-12-19 16:17:37,778 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:37,948 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:37,949 - INFO # Recvd: Hello
+2018-12-19 16:17:37,951 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:37,961 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:17:38,025 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1Success: send 5 byte to ff02::1
+2018-12-19 16:17:38,030 - INFO # :1
+2018-12-19 16:17:38,031 - INFO # Recvd: Hello
+2018-12-19 16:17:38,032 - INFO # Recvd: Hello
+2018-12-19 16:17:38,033 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:38,120 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:38,120 - INFO # Recvd: Hello
+2018-12-19 16:17:38,122 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:38,289 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:38,291 - INFO # Recvd: Hello
+2018-12-19 16:17:38,294 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:38,348 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:38,350 - INFO # Recvd: Hello
+2018-12-19 16:17:38,351 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:38,442 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:38,444 - INFO # Recvd: Hello
+2018-12-19 16:17:38,445 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:38,599 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:38,600 - INFO # Recvd: Hello
+2018-12-19 16:17:38,601 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:17:38,756 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:38,758 - INFO # Recvd: Hello
+2018-12-19 16:17:38,759 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:39,026 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:39,028 - INFO # Recvd: Hello
+2018-12-19 16:17:39,031 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:39,180 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:39,181 - INFO # Recvd: Hello
+2018-12-19 16:17:39,183 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:39,316 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:39,316 - INFO # Recvd: Hello
+2018-12-19 16:17:39,317 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:17:39,476 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:17:39,478 - INFO # Recvd: Hello
+2018-12-19 16:17:39,480 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:04,820 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:04,821 - INFO # Recvd: Hello
+2018-12-19 16:18:04,823 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:05,070 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:05,072 - INFO # Recvd: Hello
+2018-12-19 16:18:05,075 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:05,444 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:05,445 - INFO # Recvd: Hello
+2018-12-19 16:18:05,446 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:05,770 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:05,771 - INFO # Recvd: Hello
+2018-12-19 16:18:05,773 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:05,879 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:18:05,880 - INFO # Recvd: Hello
+2018-12-19 16:18:05,881 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:06,030 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:06,031 - INFO # Recvd: Hello
+2018-12-19 16:18:06,032 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:18:06,119 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:06,121 - INFO # Recvd: Hello
+2018-12-19 16:18:06,123 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:18:06,203 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:06,204 - INFO # Recvd: Hello
+2018-12-19 16:18:06,205 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:06,284 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:06,285 - INFO # Recvd: Hello
+2018-12-19 16:18:06,286 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:06,366 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:18:06,367 - INFO # Recvd: Hello
+2018-12-19 16:18:06,368 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:06,521 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:06,524 - INFO # Recvd: Hello
+2018-12-19 16:18:06,525 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:06,665 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:18:06,666 - INFO # Recvd: Hello
+2018-12-19 16:18:06,668 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:18:06,815 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:06,816 - INFO # Recvd: Hello
+2018-12-19 16:18:06,817 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:18:06,847 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:18:06,848 - INFO # Recvd: Hello
+2018-12-19 16:18:06,849 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:19:22,806 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 30
+2018-12-19 16:19:22,807 - INFO # Recvd: Hello
+2018-12-19 16:19:22,808 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:19:23,729 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:19:23,730 - INFO # Recvd: Hello
+2018-12-19 16:19:23,731 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:19:24,266 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:19:24,268 - INFO # Recvd: Hello
+2018-12-19 16:19:24,270 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:19:24,393 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:19:24,394 - INFO # Recvd: Hello
+2018-12-19 16:19:24,397 - INFO # [BENCH_CONTEXT_SW[BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:19:24,398 - INFO # Recvd: Hello
+2018-12-19 16:19:24,398 - INFO # ITCHING] 2 1 5
+2018-12-19 16:19:24,400 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:19:24,794 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:19:24,795 - INFO # Recvd: Hello
+2018-12-19 16:19:24,795 - INFO # Recvd: Hello
+2018-12-19 16:19:24,796 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:24:55,355 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:24:55,357 - INFO # Recvd: Hello
+2018-12-19 16:24:55,359 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:24:56,002 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:24:56,003 - INFO # Recvd: Hello
+2018-12-19 16:24:56,004 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:24:56,206 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:24:56,208 - INFO # Recvd: Hello
+2018-12-19 16:24:56,209 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:24:56,386 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:24:56,387 - INFO # Recvd: Hello
+2018-12-19 16:24:56,390 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:24:56,544 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:24:56,545 - INFO # Recvd: Hello
+2018-12-19 16:24:56,546 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:24:56,707 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:24:56,708 - INFO # Recvd: Hello
+2018-12-19 16:24:56,711 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:24:56,836 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:24:56,837 - INFO # Recvd: Hello
+2018-12-19 16:24:56,839 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:24:57,004 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:24:57,005 - INFO # Recvd: Hello
+2018-12-19 16:24:57,007 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:04,411 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:04,412 - INFO # Recvd: Hello
+2018-12-19 16:25:04,413 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:04,590 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:04,592 - INFO # Recvd: Hello
+2018-12-19 16:25:04,593 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:04,652 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:04,653 - INFO # Recvd: Hello
+2018-12-19 16:25:04,655 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:04,780 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:04,782 - INFO # Recvd: Hello
+2018-12-19 16:25:04,786 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:04,987 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:04,989 - INFO # Recvd: Hello
+2018-12-19 16:25:04,991 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:05,212 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:05,214 - INFO # Recvd: Hello
+2018-12-19 16:25:05,216 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:05,421 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:05,423 - INFO # Recvd: Hello
+2018-12-19 16:25:05,425 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:05,604 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:05,605 - INFO # Recvd: Hello
+2018-12-19 16:25:05,607 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:05,801 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:05,803 - INFO # Recvd: Hello
+2018-12-19 16:25:05,804 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:06,000 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:06,002 - INFO # Recvd: Hello
+2018-12-19 16:25:06,003 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:06,209 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:06,210 - INFO # Recvd: Hello
+2018-12-19 16:25:06,213 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:06,366 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:06,367 - INFO # Recvd: Hello
+2018-12-19 16:25:06,369 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:06,563 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:06,564 - INFO # Recvd: Hello
+2018-12-19 16:25:06,565 - INFO # Recvd: Hello
+2018-12-19 16:25:06,566 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:06,743 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:06,745 - INFO # Recvd: Hello
+2018-12-19 16:25:06,747 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:06,907 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:06,908 - INFO # Recvd: Hello
+2018-12-19 16:25:06,910 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:07,071 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:07,072 - INFO # Recvd: Hello
+2018-12-19 16:25:07,074 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:07,237 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:07,239 - INFO # Recvd: Hello
+2018-12-19 16:25:07,242 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:07,398 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:07,399 - INFO # Recvd: Hello
+2018-12-19 16:25:07,401 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:08,614 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:08,616 - INFO # Recvd: Hello
+2018-12-19 16:25:08,619 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:08,808 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:08,810 - INFO # Recvd: Hello
+2018-12-19 16:25:08,811 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:08,954 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:08,956 - INFO # Recvd: Hello
+2018-12-19 16:25:08,959 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:09,120 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:09,122 - INFO # Recvd: Hello
+2018-12-19 16:25:09,125 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:09,288 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:09,289 - INFO # Recvd: Hello
+2018-12-19 16:25:09,292 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:09,437 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:09,439 - INFO # Recvd: Hello
+2018-12-19 16:25:09,441 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:09,585 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:09,586 - INFO # Recvd: Hello
+2018-12-19 16:25:09,589 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:09,913 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:09,914 - INFO # Recvd: Hello
+2018-12-19 16:25:09,916 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:10,095 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:10,096 - INFO # Recvd: Hello
+2018-12-19 16:25:10,099 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:10,161 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:10,161 - INFO # Recvd: Hello
+2018-12-19 16:25:10,162 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:10,465 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:10,466 - INFO # Recvd: Hello
+2018-12-19 16:25:10,469 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:10,643 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:10,645 - INFO # Recvd: Hello
+2018-12-19 16:25:10,646 - INFO # Recvd: Hello
+2018-12-19 16:25:10,647 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:10,679 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:10,680 - INFO # Recvd: Hello
+2018-12-19 16:25:10,681 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:10,823 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:10,824 - INFO # Recvd: Hello
+2018-12-19 16:25:10,826 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:10,853 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:10,854 - INFO # Recvd: Hello
+2018-12-19 16:25:10,854 - INFO # Recvd: Hello
+2018-12-19 16:25:10,855 - INFO # Recvd: Hello
+2018-12-19 16:25:10,856 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:10,862 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:10,863 - INFO # Recvd: Hello
+2018-12-19 16:25:10,864 - INFO # Recvd: Hello
+2018-12-19 16:25:10,865 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:10,996 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:10,997 - INFO # Recvd: Hello
+2018-12-19 16:25:10,997 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:11,063 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:11,063 - INFO # Recvd: Hello
+2018-12-19 16:25:11,064 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:11,221 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:11,223 - INFO # Recvd: Hello
+2018-12-19 16:25:11,225 - INFO # Recvd: Hello
+2018-12-19 16:25:11,226 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:31,436 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:31,437 - INFO # Recvd: Hello
+2018-12-19 16:25:31,439 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:31,646 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:31,647 - INFO # Recvd: Hello
+2018-12-19 16:25:31,650 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:31,810 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:31,811 - INFO # Recvd: Hello
+2018-12-19 16:25:31,814 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:31,844 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:31,845 - INFO # Recvd: Hello
+2018-12-19 16:25:31,847 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:32,259 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:32,260 - INFO # Recvd: Hello
+2018-12-19 16:25:32,262 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:32,358 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:32,360 - INFO # Recvd: Hello
+2018-12-19 16:25:32,362 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:32,498 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:32,498 - INFO # Recvd: Hello
+2018-12-19 16:25:32,499 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:32,695 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:32,697 - INFO # Recvd: Hello
+2018-12-19 16:25:32,699 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:32,885 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:32,886 - INFO # Recvd: Hello
+2018-12-19 16:25:32,887 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:33,071 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:33,073 - INFO # Recvd: Hello
+2018-12-19 16:25:33,075 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:33,333 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:33,333 - INFO # Recvd: Hello
+2018-12-19 16:25:33,334 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:33,486 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:33,487 - INFO # Recvd: Hello
+2018-12-19 16:25:33,489 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:33,656 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:33,657 - INFO # Recvd: Hello
+2018-12-19 16:25:33,659 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:33,822 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:33,824 - INFO # Recvd: Hello
+2018-12-19 16:25:33,827 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:33,979 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:33,980 - INFO # Recvd: Hello
+2018-12-19 16:25:33,982 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:34,169 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:34,171 - INFO # Recvd: Hello
+2018-12-19 16:25:34,173 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:34,263 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:34,265 - INFO # Recvd: Hello
+2018-12-19 16:25:34,267 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:34,389 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:34,391 - INFO # Recvd: Hello
+2018-12-19 16:25:34,393 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:34,478 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:34,479 - INFO # Recvd: Hello
+2018-12-19 16:25:34,482 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:34,554 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:34,556 - INFO # Recvd: Hello
+2018-12-19 16:25:34,558 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:34,731 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:34,731 - INFO # Recvd: Hello
+2018-12-19 16:25:34,732 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:34,788 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:34,789 - INFO # Recvd: Hello
+2018-12-19 16:25:34,790 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:34,893 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:34,895 - INFO # Recvd: Hello
+2018-12-19 16:25:34,896 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:35,054 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:35,056 - INFO # Recvd: Hello
+2018-12-19 16:25:35,059 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:35,114 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:35,116 - INFO # Recvd: Hello
+2018-12-19 16:25:35,118 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:35,195 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:35,196 - INFO # Recvd: Hello
+2018-12-19 16:25:35,198 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:35,293 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:35,295 - INFO # Recvd: Hello
+2018-12-19 16:25:35,296 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:35,389 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:35,391 - INFO # Recvd: Hello
+2018-12-19 16:25:35,393 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:35,534 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:25:35,535 - INFO # Recvd: Hello
+2018-12-19 16:25:35,537 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:35,577 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:35,578 - INFO # Recvd: Hello
+2018-12-19 16:25:35,580 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:35,673 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:35,674 - INFO # Recvd: Hello
+2018-12-19 16:25:35,675 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:35,803 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:35,804 - INFO # Recvd: Hello
+2018-12-19 16:25:35,807 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:35,960 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:35,961 - INFO # Recvd: Hello
+2018-12-19 16:25:35,962 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:36,085 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:36,086 - INFO # Recvd: Hello
+2018-12-19 16:25:36,087 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:36,233 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:36,235 - INFO # Recvd: Hello
+2018-12-19 16:25:36,237 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:36,376 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:36,377 - INFO # Recvd: Hello
+2018-12-19 16:25:36,378 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:36,432 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:36,434 - INFO # Recvd: Hello
+2018-12-19 16:25:36,435 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:25:36,509 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:36,510 - INFO # Recvd: Hello
+2018-12-19 16:25:36,511 - INFO # Recvd: Hello
+2018-12-19 16:25:36,512 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:36,565 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:25:36,567 - INFO # Recvd: Hello
+2018-12-19 16:25:36,569 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:25:38,558 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:38,561 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:38,729 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:38,910 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:39,143 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:39,146 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:39,235 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:39,375 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:39,504 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:39,808 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:39,885 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:40,012 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:40,221 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:40,430 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:40,994 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:41,168 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:41,346 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:25:41,516 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:29:02,228 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:29:02,230 - INFO # Recvd: Hello
+2018-12-19 16:29:02,232 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:29:05,758 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:29:05,760 - INFO # Recvd: Hello
+2018-12-19 16:29:05,762 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:29:22,027 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:29:22,028 - INFO # Recvd: Hello
+2018-12-19 16:29:22,029 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:29:22,099 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:29:22,100 - INFO # Recvd: Hello
+2018-12-19 16:29:22,101 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:29:22,201 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:29:22,202 - INFO # Recvd: Hello
+2018-12-19 16:29:22,203 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:29:22,262 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:29:22,264 - INFO # Recvd: Hello
+2018-12-19 16:29:22,266 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:29:22,349 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:29:22,351 - INFO # Recvd: Hello
+2018-12-19 16:29:22,353 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:29:22,489 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:29:22,490 - INFO # Recvd: Hello
+2018-12-19 16:29:22,493 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:29:22,619 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:29:22,621 - INFO # Recvd: Hello
+2018-12-19 16:29:22,623 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:29:24,905 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:29:24,906 - INFO # Recvd: Hello
+2018-12-19 16:29:24,907 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:29:36,941 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:29:38,617 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:29:38,812 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:29:39,639 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:29:39,656 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:29:39,657 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:29:39,658 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:29:39,659 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:29:39,660 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:30:48,354 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:30:48,355 - INFO # Recvd: Hello
+2018-12-19 16:30:48,357 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:32:49,179 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:32:49,312 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:32:50,650 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:32:51,606 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:32:52,209 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:33:41,043 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:33:41,045 - INFO # Recvd: Hello
+2018-12-19 16:33:41,047 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:33:41,357 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:33:41,359 - INFO # Recvd: Hello
+2018-12-19 16:33:41,361 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:33:48,741 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:07,706 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:40:07,708 - INFO # Recvd: Hello
+2018-12-19 16:40:07,709 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:40:15,405 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:40:15,407 - INFO # Recvd: Hello
+2018-12-19 16:40:15,409 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:40:16,529 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:40:16,530 - INFO # Recvd: Hello
+2018-12-19 16:40:16,533 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:40:17,394 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:40:17,395 - INFO # Recvd: Hello
+2018-12-19 16:40:17,397 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:40:18,111 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:40:18,112 - INFO # Recvd: Hello
+2018-12-19 16:40:18,114 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:40:18,841 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:40:18,843 - INFO # Recvd: Hello
+2018-12-19 16:40:18,845 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:40:19,556 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:40:19,557 - INFO # Recvd: Hello
+2018-12-19 16:40:19,559 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:40:19,659 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:40:19,660 - INFO # Recvd: Hello
+2018-12-19 16:40:19,661 - INFO # Recvd: Hello
+2018-12-19 16:40:19,663 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:40:27,567 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:28,230 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:28,631 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:28,652 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:28,696 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:28,730 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:28,734 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:31,128 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:31,482 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:31,937 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:32,314 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:32,375 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:32,417 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:32,425 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:32,872 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:32,905 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:32,916 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:40:34,567 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:40:34,569 - INFO # Recvd: Hello
+2018-12-19 16:40:34,571 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:40:34,956 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:40:34,957 - INFO # Recvd: Hello
+2018-12-19 16:40:34,960 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:43:34,640 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:43:34,641 - INFO # Recvd: Hello
+2018-12-19 16:43:34,644 - INFO # [BENCH[BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:43:34,645 - INFO # Recvd: Hello
+2018-12-19 16:43:34,646 - INFO #  Hello
+2018-12-19 16:43:34,647 - INFO # T_SWITCHING] 2 1 5
+2018-12-19 16:43:34,649 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:43:48,551 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:43:48,552 - INFO # Recvd: Hello
+2018-12-19 16:43:48,556 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:43:49,721 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:43:49,722 - INFO # Recvd: Hello
+2018-12-19 16:43:49,724 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:43:55,387 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:43:55,389 - INFO # Recvd: Hello
+2018-12-19 16:43:55,390 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:43:56,152 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:43:56,154 - INFO # Recvd: Hello
+2018-12-19 16:43:56,156 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:43:57,997 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:43:57,998 - INFO # Recvd: Hello
+2018-12-19 16:43:58,000 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:43:58,479 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:43:58,481 - INFO # Recvd: Hello
+2018-12-19 16:43:58,482 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:43:59,510 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:43:59,511 - INFO # Recvd: Hello
+2018-12-19 16:43:59,511 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:44:01,480 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:44:01,482 - INFO # Recvd: Hello
+2018-12-19 16:44:01,484 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:44:04,167 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:44:04,168 - INFO # Recvd: Hello
+2018-12-19 16:44:04,170 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:44:07,514 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:44:07,944 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:44:08,260 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:44:08,542 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:09,798 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:09,801 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:09,803 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:09,943 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:09,946 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:10,077 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:10,216 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:10,343 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:10,345 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:10,469 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:10,607 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:10,726 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:12,677 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:12,679 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:12,732 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:12,734 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:12,766 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:12,878 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:12,960 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:12,962 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:13,062 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:13,134 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:14,750 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:14,795 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:14,831 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:15,246 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:15,586 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:15,647 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:15,653 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:15,656 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:16,038 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:16,431 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:16,852 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:16,865 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:16,912 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:17,462 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:17,914 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:18,728 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:19,740 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:20,445 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:20,974 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:20,978 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:20,981 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:21,062 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:21,068 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:21,311 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:21,419 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:21,671 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:22,024 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:22,422 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:22,495 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:22,497 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:22,791 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:23,040 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:23,259 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:23,261 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:23,954 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:24,565 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:24,911 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:25,392 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:25,734 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:25,981 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:26,045 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:26,189 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:26,268 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:26,423 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:26,783 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:27,123 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:27,193 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:27,195 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:33,779 - INFO # main(): This is RIOT! (Version: 2018.10-devel-1543-g66fbd-context_switching)
+2018-12-19 16:45:33,782 - INFO # [SUCCESS] Button initialized!
+2018-12-19 16:45:33,783 - INFO # Success: started UDP server on port 8808
+2018-12-19 16:45:33,784 - INFO # [BENCH_CONTEXT_SWITCHING] 0 2 5
+2018-12-19 16:45:35,663 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:36,074 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:36,288 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:36,499 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:36,673 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:40,303 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:40,507 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:40,705 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:40,892 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:41,362 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:41,364 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:41,598 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:41,662 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:41,664 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:41,666 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:42,342 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:42,615 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:43,369 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:50,709 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:50,986 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,033 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,034 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,190 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,260 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,384 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,391 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,403 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,404 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,552 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,762 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,798 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,906 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,946 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:51,947 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:45:52,741 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:45:52,742 - INFO # Recvd: Hello
+2018-12-19 16:45:52,745 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:45:52,893 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:45:52,895 - INFO # Recvd: Hello
+2018-12-19 16:45:52,897 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:45:53,037 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:45:53,038 - INFO # Recvd: Hello
+2018-12-19 16:45:53,040 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:45:53,171 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:45:53,173 - INFO # Recvd: Hello
+2018-12-19 16:45:53,175 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:45:53,243 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:45:53,244 - INFO # Recvd: Hello
+2018-12-19 16:45:53,246 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:45:53,315 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:45:53,316 - INFO # Recvd: Hello
+2018-12-19 16:45:53,319 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:45:53,451 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:45:53,452 - INFO # Recvd: Hello
+2018-12-19 16:45:53,454 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:45:53,578 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:45:53,580 - INFO # Recvd: Hello
+2018-12-19 16:45:53,581 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:45:53,717 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:45:53,719 - INFO # Recvd: Hello
+2018-12-19 16:45:53,720 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:45:53,859 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:45:53,861 - INFO # Recvd: Hello
+2018-12-19 16:45:53,863 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:45:58,464 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:45:58,465 - INFO # Recvd: Hello
+2018-12-19 16:45:58,468 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:46:04,488 - INFO # main(): This is RIOT! (Version: 2018.10-devel-1543-g66fbd-context_switching)
+2018-12-19 16:46:04,489 - INFO # [SUCCESS] Button initialized!
+2018-12-19 16:46:04,491 - INFO # Success: started UDP server on port 8808
+2018-12-19 16:46:04,493 - INFO # [BENCH_CONTEXT_SWITCHING] 0 2 5
+2018-12-19 16:46:06,164 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:06,444 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:06,620 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:06,688 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:06,688 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:06,791 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:06,950 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:07,029 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:07,895 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:46:07,896 - INFO # Recvd: Hello
+2018-12-19 16:46:07,898 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:46:08,177 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:46:08,178 - INFO # Recvd: Hello
+2018-12-19 16:46:08,179 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:46:08,372 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:46:08,373 - INFO # Recvd: Hello
+2018-12-19 16:46:08,375 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:46:09,226 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:09,522 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:09,730 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:09,916 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:10,113 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:10,305 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:10,502 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:10,714 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:10,898 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:11,143 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:12,583 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:46:12,584 - INFO # Recvd: Hello
+2018-12-19 16:46:12,585 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:46:12,801 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:46:12,803 - INFO # Recvd: Hello
+2018-12-19 16:46:12,806 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:46:12,907 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:46:12,908 - INFO # Recvd: Hello
+2018-12-19 16:46:12,909 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:46:13,056 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:46:13,057 - INFO # Recvd: Hello
+2018-12-19 16:46:13,060 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:46:13,222 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:46:13,223 - INFO # Recvd: Hello
+2018-12-19 16:46:13,224 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:46:13,416 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:46:13,418 - INFO # Recvd: Hello
+2018-12-19 16:46:13,420 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:46:34,044 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:34,114 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:34,224 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:34,406 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:34,573 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:46:34,740 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:47:04,248 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:47:04,329 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:35,762 - INFO # main(): This is RIOT! (Version: 2018.10-devel-1543-g66fbd-context_switching)
+2018-12-19 16:49:35,765 - INFO # [SUCCESS] Button initialized!
+2018-12-19 16:49:35,767 - INFO # Success: started UDP server on port 8808
+2018-12-19 16:49:35,770 - INFO # [BENCH_CONTEXT_SWITCHING] 0 2 5
+2018-12-19 16:49:36,814 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:36,981 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:37,134 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:37,167 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:37,400 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:39,796 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:40,257 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:40,469 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:40,548 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:40,643 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:40,833 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:40,996 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:41,026 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:49:41,144 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:50:03,657 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:55:28,496 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:55:28,697 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:55:28,821 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:55:29,134 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 16:55:30,581 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:55:30,581 - INFO # Recvd: Hello
+2018-12-19 16:55:30,582 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:55:30,757 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:55:30,758 - INFO # Recvd: Hello
+2018-12-19 16:55:30,760 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:55:31,081 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:55:31,082 - INFO # Recvd: Hello
+2018-12-19 16:55:31,084 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:55:31,242 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:55:31,243 - INFO # Recvd: Hello
+2018-12-19 16:55:31,245 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:55:31,383 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:55:31,385 - INFO # Recvd: Hello
+2018-12-19 16:55:31,386 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:55:31,565 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:55:31,567 - INFO # Recvd: Hello
+2018-12-19 16:55:31,569 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:56:16,598 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:56:16,599 - INFO # Recvd: Hello
+2018-12-19 16:56:16,600 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:56:17,258 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:56:17,260 - INFO # Recvd: Hello
+2018-12-19 16:56:17,261 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:56:17,879 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:56:17,881 - INFO # Recvd: Hello
+2018-12-19 16:56:17,884 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:56:18,470 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:56:18,472 - INFO # Recvd: Hello
+2018-12-19 16:56:18,474 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:56:18,918 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:56:18,919 - INFO # Recvd: Hello
+2018-12-19 16:56:18,921 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:56:19,362 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:56:19,363 - INFO # Recvd: Hello
+2018-12-19 16:56:19,365 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:56:19,703 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:56:19,704 - INFO # Recvd: Hello
+2018-12-19 16:56:19,707 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 16:56:20,032 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:56:20,034 - INFO # Recvd: Hello
+2018-12-19 16:56:20,035 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:56:20,660 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:56:20,662 - INFO # Recvd: Hello
+2018-12-19 16:56:20,663 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:58:43,535 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 16:58:43,537 - INFO # Recvd: Hello
+2018-12-19 16:58:43,538 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 16:58:43,790 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 16:58:43,791 - INFO # Recvd: Hello
+2018-12-19 16:58:43,792 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:01:32,320 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:01:32,322 - INFO # Recvd: Hello
+2018-12-19 17:01:32,324 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:01:33,294 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:01:33,295 - INFO # Recvd: Hello
+2018-12-19 17:01:33,297 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:01:33,934 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:01:33,935 - INFO # Recvd: Hello
+2018-12-19 17:01:33,937 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:01:36,428 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:01:36,429 - INFO # Recvd: Hello
+2018-12-19 17:01:36,430 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:01:37,130 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:01:37,131 - INFO # Recvd: Hello
+2018-12-19 17:01:37,132 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:01:38,239 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:01:38,240 - INFO # Recvd: Hello
+2018-12-19 17:01:38,243 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:01:40,212 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:04,359 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:07,136 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:07,675 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:12,622 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:12,947 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:13,201 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:13,450 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:14,971 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:15,330 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:15,669 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:15,966 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:16,069 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:16,270 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:16,534 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:16,795 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:17,086 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:18,344 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:07:20,785 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:07:20,786 - INFO # Recvd: Hello
+2018-12-19 17:07:20,789 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:07:21,401 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:07:21,402 - INFO # Recvd: Hello
+2018-12-19 17:07:21,403 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 17:07:21,508 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:21,508 - INFO # Recvd: Hello
+2018-12-19 17:07:21,509 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:07:21,713 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:07:21,713 - INFO # Recvd: Hello
+2018-12-19 17:07:21,714 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:07:21,729 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:21,729 - INFO # Recvd: Hello
+2018-12-19 17:07:21,730 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:07:21,995 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:21,996 - INFO # Recvd: Hello
+2018-12-19 17:07:21,996 - INFO # Recvd: Hello
+2018-12-19 17:07:21,997 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:07:23,085 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:23,086 - INFO # Recvd: Hello
+2018-12-19 17:07:23,086 - INFO # Recvd: Hello
+2018-12-19 17:07:23,087 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:07:23,109 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:07:23,110 - INFO # Recvd: Hello
+2018-12-19 17:07:23,111 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:07:23,339 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:07:23,341 - INFO # Recvd: Hello
+2018-12-19 17:07:23,342 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:07:24,204 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:24,205 - INFO # Recvd: Hello
+2018-12-19 17:07:24,205 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 17:07:24,284 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:24,285 - INFO # Recvd: Hello
+2018-12-19 17:07:24,285 - INFO # Recvd: Hello
+2018-12-19 17:07:24,286 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 17:07:24,910 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:24,911 - INFO # Recvd: Hello
+2018-12-19 17:07:24,914 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 17:07:26,690 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:26,691 - INFO # Recvd: Hello
+2018-12-19 17:07:26,694 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 17:07:27,155 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:27,157 - INFO # Recvd: Hello
+2018-12-19 17:07:27,159 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 17:07:27,595 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:27,596 - INFO # Recvd: Hello
+2018-12-19 17:07:27,598 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:07:28,022 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:07:28,023 - INFO # Recvd: Hello
+2018-12-19 17:07:28,028 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:10:49,102 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:10:53,013 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:10:53,656 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:10:54,800 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:10:57,933 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:10:57,934 - INFO # Recvd: Hello
+2018-12-19 17:10:57,935 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:10:58,029 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:10:58,030 - INFO # Recvd: Hello
+2018-12-19 17:10:58,032 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:10:58,578 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:10:58,579 - INFO # Recvd: Hello
+2018-12-19 17:10:58,580 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:10:58,664 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:10:58,665 - INFO # Recvd: Hello
+2018-12-19 17:10:58,667 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:10:59,022 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:10:59,024 - INFO # Recvd: Hello
+2018-12-19 17:10:59,026 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:10:59,401 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:10:59,403 - INFO # Recvd: Hello
+2018-12-19 17:10:59,405 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:10:59,737 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:10:59,738 - INFO # Recvd: Hello
+2018-12-19 17:10:59,740 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:11:37,449 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:11:37,584 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:11:38,787 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:11:38,900 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:13:58,874 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:13:58,875 - INFO # Recvd: Hello
+2018-12-19 17:13:58,876 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:00,013 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:14:00,014 - INFO # Recvd: Hello
+2018-12-19 17:14:00,016 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:00,133 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:14:00,134 - INFO # Recvd: Hello
+2018-12-19 17:14:00,136 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:00,143 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:14:00,144 - INFO # Recvd: Hello
+2018-12-19 17:14:00,146 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:01,511 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:14:01,512 - INFO # Recvd: Hello
+2018-12-19 17:14:01,514 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:01,628 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:14:01,629 - INFO # Recvd: Hello
+2018-12-19 17:14:01,630 - INFO # Recvd: Hello
+2018-12-19 17:14:01,630 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:02,433 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:14:02,434 - INFO # Recvd: Hello
+2018-12-19 17:14:02,437 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:02,990 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:14:02,991 - INFO # Recvd: Hello
+2018-12-19 17:14:02,993 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:03,112 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:14:03,113 - INFO # Recvd: Hello
+2018-12-19 17:14:03,116 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:03,528 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:14:03,529 - INFO # Recvd: Hello
+2018-12-19 17:14:03,530 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:04,230 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:14:04,231 - INFO # Recvd: Hello
+2018-12-19 17:14:04,233 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:04,928 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:14:04,929 - INFO # Recvd: Hello
+2018-12-19 17:14:04,931 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:06,836 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:14:06,837 - INFO # Recvd: Hello
+2018-12-19 17:14:06,839 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:07,705 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:14:07,706 - INFO # Recvd: Hello
+2018-12-19 17:14:07,708 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:08,388 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:14:08,390 - INFO # Recvd: Hello
+2018-12-19 17:14:08,391 - INFO # Recvd: Hello
+2018-12-19 17:14:08,391 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:08,663 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:14:08,665 - INFO # Recvd: Hello
+2018-12-19 17:14:08,666 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:09,013 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:14:09,015 - INFO # Recvd: Hello
+2018-12-19 17:14:09,017 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:09,670 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 5
+2018-12-19 17:14:09,672 - INFO # Recvd: Hello
+2018-12-19 17:14:09,674 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:10,427 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:14:10,428 - INFO # Recvd: Hello
+2018-12-19 17:14:10,429 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 5
+2018-12-19 17:14:10,548 - INFO # [BENCH_CONTEXT_SWITCHING] 2 1 4
+2018-12-19 17:14:10,549 - INFO # Recvd: Hello
+2018-12-19 17:14:10,552 - INFO # [BENCH_CONTEXT_SWITCHING] 1 2 4
+2018-12-19 17:14:43,607 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:14:44,068 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:14:44,526 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:14:44,998 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:14:45,398 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:14:45,414 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:14:45,837 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:14:45,864 - INFO # Success: send 5 byte to ff02::1
+2018-12-19 17:14:46,314 - INFO # Success: send 5 byte to ff02::1
+2018-12-20 08:54:06,029 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:07,031 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:08,033 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:09,039 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:10,040 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:11,041 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:12,042 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:13,044 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:14,045 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:15,046 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:16,048 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:17,049 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:18,051 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:19,055 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:20,056 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:21,057 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:22,058 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:23,059 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:24,060 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:25,061 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:26,064 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:27,065 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:28,067 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:29,068 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:30,069 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:31,071 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:32,072 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:33,075 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:34,076 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:35,078 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:36,079 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:37,080 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:38,082 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:39,083 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:40,085 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:41,087 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:42,088 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:43,089 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:44,091 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:45,092 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:46,094 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:47,096 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:48,097 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:49,099 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:50,100 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:51,102 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:52,104 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:53,105 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:54,107 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:55,108 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:56,110 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:57,112 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:58,114 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:54:59,115 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:55:00,116 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:55:01,118 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:55:02,119 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:55:03,121 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:55:04,123 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:55:05,125 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:55:06,126 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:55:07,129 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:55:08,129 - WARNING # Serial port disconnected, waiting to get reconnected...
+2018-12-20 08:55:09,131 - WARNING # Serial port disconnected, waiting to get reconnected...
+/home/derwaan/codes/bench-os/tasks/riot/poster_demo/../../../os/riot/Makefile.include:529: recipe for target 'term' failed
