@@ -33,6 +33,6 @@ for line in sys.stdin:
     dic[(from_id, to_id)] = [time_us]
   else:
     dic[(from_id, to_id)].append(time_us)
-  print((from_id, to_id), average(dic[from_id, to_id]))
-
-
+  print(chr(27) + "[2J") # Clean
+  print("Time from {} thread to {} thread: {} microseconds".format(from_id, to_id, time_us))
+  print("Average from {} thread to {} thread: {} microseconds".format(from_id, to_id, average(dic[from_id, to_id])))
