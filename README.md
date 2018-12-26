@@ -1,3 +1,5 @@
+# Deprecated !! Please go to https://github.com/bench-os/bench-os instead
+
 # Benchmark of Operating Systems on Internet of Things devices
 Master thesis, Gomez Julien & Tran Trong-Vu, 2018-2019.
 
